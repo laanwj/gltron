@@ -1,0 +1,36 @@
+# 
+# Wavefront material file
+# Converted by 3D Exploration 1.833
+# XDimension Software, LLC
+# http://www.xdsoft.com/explorer/
+# 
+newmtl Hull
+	 Ka 0 0 0
+	 Kd 0.73 0.73 1
+	 Ks 0 0 0
+	 illum 2
+	 Ns 18
+newmtl Wheel
+	 Ka 0 0 0
+	 Kd 0 0 0
+	 Ks 0 0 0
+	 illum 2
+	 Ns 84.23
+newmtl Spoke
+	 Ka 0 0 0
+	 Kd 1 1 1
+	 Ks 0.5 0.5 0.5
+	 illum 2
+	 Ns 18
+newmtl Chassis
+	 Ka 0 0 0
+	 Kd 1 1 1
+	 Ks 0 0 0
+	 illum 2
+	 Ns 18
+newmtl Window
+	 Ka 0 0 0
+	 Kd 0 0 0
+	 Ks 1 1 1
+	 illum 2
+	 Ns 18

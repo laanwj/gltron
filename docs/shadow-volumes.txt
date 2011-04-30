@@ -1,0 +1,20 @@
+- (done) Draw Object to fb & z, using (weaker) cameralight, and clear stencil
+- Draw Shadow Volume to stencil buffer (using z-fail or z-pass)
+- (done) Draw Object with sky light, but only where stencil is 0
+
+z-pass: find edge polygons, and extrude from light until z <= 0 (e.g. project
+to floor)
+
+z-fail: find edges as above, plus draw front facing polys normally, and
+extrude backfaces until z <= 0 (e.g. project to floor).
+
+Tasks needed:
+
+- Transform light into model space
+- Tag all polys as front or back-facing
+- Create index buffer for front facing polys
+- Create index buffer for back facing polys
+- Walk adjacency list to create edge polys:
+	- create two vertices original edge
+	- create two vertices extruded in light direction for extruded edge
+

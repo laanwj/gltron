@@ -1,0 +1,364 @@
+0.62 to 0.70
+
+- New AI that actively tries to cut you off
+- Two new Gameplay modes:
+  Booster (where you can accelerate using a limited 'Turbo' supply), and
+  Wall Acceleration (where you speed up if you get close to an enemy cycles
+  trai)
+- better handling of .ini file (versioning & protection against partly
+  written files)
+- simplified GUI
+- various other bugfixes
+
+0.61 to 0.62
+- better & faster shadows
+- red outlines on the recognizer
+
+- better 3D sound effects
+- sound effects for player's lightcycle
+- sound effects for recognizer flying overhead
+- support for 'switching songs' (add your own music)
+- mp3 support
+- ogg/vorbis support (only linux version)
+
+- better camera zoom functions
+
+- integrated scripting language
+- more & more intuitive configuration options
+- many stability & performance enhancements
+- distribution friendly build process 
+
+
+0.59 to 0.61
+- fixed lightcycle-hits-lightcycle lockup bug
+- fixed a view z-buffer issues
+- camera settings are saved
+
+0.59 to 0.60
+
+Usage:
+- new camera controls, use the mouse to tweak/rotate/zoom
+- removed the 2D map
+- simplified the menu structure
+Graphics:
+- vastly better visuals due to lighting & shadows
+- fixed many rendering artefacts
+- added recognizers
+- new textures / create your own
+Audio:
+- 3D positional sound & doppler effects
+Gameplay:
+- more movie-like default
+- much much stronger AI options (try to beat the MCP)
+Others:
+- in-game credits
+
+some details (outdated):
+- fixed load/save of player options (computer/human/none)
+- fixed crash on exit on linux/3dfx
+- converted all '// ... ' comments to '/* ... */' for added portability
+- added z-tests for almost everything to prevent visual artefacts
+- back-to-front ordering of transparent surfaces (sort-of)
+- converted 0 to NULL for null pointers
+- changed internals for:
+- collision detection, turns, movement, trails, 
+- messed with trail drawing (z-buffer), moved that to trail.c
+- added mouse callbacks (glut only) and stubs in the gui
+- added mouse callbacks for SDL and SYSTEM_MOUSEUP, SYSTEM_MOUSEDOWN constants
+- colored debug texture (2D map)
+- added second 2D map for evaluation (one line drawing, one textured)
+- added "console" for status messages
+- added ligthing for trails
+- added shadows to trails
+- added line to trail-top to make them appear 'thick'
+- added 'art-pack' support
+- rewritten texture handling / loading. added 'fallback' path
+- texture repeat or stretch on larger arenas (configurable)
+- too many to add
+
+0.53 to 0.59
+most important visible changes (including the ones to 0.59beta)
+Game play:
+- rewrote computer player / added skill levels
+- different arena sizes (menu item)
+- different speeds (menu item)
+- experimental speed oszillation
+- configure players (human, computer, none)
+Other:
+- very cool new model from Charles Babbage
+- levels-of-detail for the model
+- configure keyboard controls (not saved between games yet)
+- added volume settings for music / fx to Audio menu
+- used wall & floor texture from Nicolas Zimmermann
+- (optional) sound effects, SDL version only
+- added trail decals on solid trails (option)
+- added trail bow before cycle
+- changed GUI background
+- resized menu (dynamic size now)
+- added screenshot function (F12 - disabled on MacOS)
+- fixed lightcycle going backwards (if you liked the old way better,
+  that's an option now)
+- added arena overview camera mode when dead
+- GNU autoconf WOOO! WOOO!
+- textures in png format
+
+other visible changes (including the ones to 0.59beta)
+- played with wall dimensions
+- fixed chase camera starting position
+- fixed bug with crash texture turning then crashing during smooth turn
+- 4 different wall textures (Nicolas, Darrell)
+- added mipmapping with GLU box filter (Darrell)
+- choose bitween bilinear & trilinear filtering
+- fixed wall textures being upside down
+- adjusted clip plane (better 1st person view now)
+- added polygon counter
+- added support for multiple fonts
+- cam chase speed scales with cycle speed now
+
+code changes:
+- see cvs logs
+
+to 0.59beta
+visible changes
+- Arena size is now a variable (game->settins->grid_size or grid_size
+  in gltron.ini)
+- cam chase speed scales with cycle speed now
+- fixed lightcycle going backwards (if you liked the old way better,
+  that's an option now)
+- (optional) sound effects, SDL version only
+- fixed wall textures being upside down
+- used wall & floor texture from Nicolas Zimmermann <nicozim@libertysurf.fr>
+- fixed bug with crash texture turning then crashing during smooth turn
+- 4 different wall textures (Nicolas, Darrell)
+- added mipmapping with GLU box filter (Darrell)
+- added different speeds to Game Settings menu (boring, normal, fast, crazy)
+- fixed chase camera starting position
+- played with wall dimensions
+- experimental speed oszillation
+- very cool new model from Charles Babbage
+- levels-of-detail for the model
+- configure players (human, computer, none)
+- configure keyboard controls (not saved between games yet)
+- added arena overview camera mode when dead
+- GNU autoconf WOOO! WOOO!
+
+code changes
+- removed clearCol
+- added parameters for value, colmap, colwidth to setCol, getCol
+  to remove dependency from global variable
+- moved all data files (except sound effects) into data/ subdirectory
+  this breaks make install of course
+- regrouped variable declarations in data.h
+- hopefully fixed stupid file loading bug now
+- changed MAX_VAR_NAME_LEN to 64
+- sanity check for grid_size and speed
+- added sound effect stubs to libmikmod code for compatibility
+- halfed crash texture
+- changed wall texture OGL format to GL_RGB (565 is better than 4444)
+- fixed bug with capped walls (wrong texcoords)
+- properly shut down SDL sound at exit
+- unite special&keyboard callbacks
+
+to 0.54
+- fixed bug that caused a crash on non-linux unices: do not free pointer
+  returned by getenv
+- removed error.h dependancy from sgi_texture.c
+- moved all glut stuff to system_glut.c, makes porting to SDL easier
+- moved data structures from gltron.h to data.h
+- added glutReshapeCallback to center the game area when the window is
+  maximised
+
+to 0.53
+- added switch/option to capture mouse pointer (useful for Voodoo1/2 owners)
+- added switch/option do disable lightcycle turning smoothly
+- added switch/option to disable crash texture
+- moved lightcycle option to video/options
+- added bilinear filtering for wall & crash textures
+  (thanks David for pointing that out, I just forgot it)
+- new logo from David Banz <David.Banz@ux-2s02.inf.fh-rhein-sieg.de>
+- accordingly, changed the color of the menu foreground and background
+  to fit the logo
+- moved player loading into initGameStructures and the mesh data
+  into Player->Model->Mesh
+- moved player color into Player->Model
+- small clean-ups
+- changed FPS code, added average / worst case FPS counter
+- fixed bug in drawText
+- added seperate display callback for gui pause mode
+- changed all display() calls in idle functions to glutPostRedisplay()
+- game finishes now after last crash is over (less abrupt)
+- can't turn cycle now after crash
+- randomized explosion vectors a bit, looks much better now
+- explosion debris fades slowly
+to 0.52
+- added crash texture
+- +necessary files: gltron_crash.cgi
+- added exploding lightcycle upon crash
+- added rotating lightcycle when doing corners (still ugly)
+- fixed lightcycle material alpha
+- changed floor texture a bit
+to 0.51:
+- moved to CVS (now on www.ards.net)
+- fixed model coloring
+- fixed a few win32 problems
+- fixed chase camera (finally)
+to 0.50:
+- optimised drawPlayers, does now frustum culling based on object coordinates
+- added configuration menu for the bots
+- threw some junk out
+to 0.50beta4:
+- incorporated the low poly models, not yet optimized
+- fixed font / font-tex.pl generating distorted texture
+- added Game Settings menu
+- made font size screen size dependent (where useful)
+- changed menu layout and initialization a bit
+- changed menu highlighting (it's now done by font color)
+- necessary files: + t-u-low.obj
+to 0.50beta3:
+- added new font handling and font textures
+- consequently dropped M. Kilgards TexFont
+- organized files (a bit)
+- necessary files: + xenotron.ftx, xenotron.0.sgi, xenotron.1.sgi
+- necessary files: - helvetica.txf
+to 0.50beta2:
+- broke FPS counter again (actually, it wasn't ever working really good)
+- changed texture format to 'SGI image data, 3-D, 4 channels, uncompressed'
+- broke a LOT of stuff
+- rewrote some more
+- it's too late in the evening
+- added some nifty background effects to the UI
+- added new callback management, works GREAT so far
+- necessary files: + gltron.sgi
+
+to 0.50alpha:
+- GPL'd all my stuff
+- rewrote a whole LOT of code not mentioned here
+- added a (primitive) menu system
+- added general file searching routine,
+  it now looks in ., GLTRON_HOME, /usr/share/games/gltron and
+  /usr/local/share/games/gltron
+- necessary files are (currently): menu.txt settings.txt helvetica.txf
+- added these to make install...
+- changed INSTALL to mention the files from above
+- changed GLTRON_SNDDIR to GLTRON_HOME
+- changed the way settings are loaded (and pointers to
+  game->settings->whatever are obtained)
+- finally really fixed the 'behind'-view (F10 to switch)
+- switched to Mark Kilgard's TexFont for Fonts (not permanent, because
+  it's not GPL'd)
+- hopefully didn't break the rpm.specs
+
+to 0.47: (all changes by Thomas Flynn)
+- Added ifdefs to .h files to allow multiple inclusion
+
+- Moved a bunch of functions from gltron.c to engine.c
+  These seem to be functions necessary for the game and do not contain OpenGL
+  or glut code.  List of functions are:
+	setCol();
+	clearCol();
+	getCol();
+	turn();
+	initDisplay();
+	changeDisplay();
+	initGame();
+	initdata();
+	colldetect();
+	doTrail();
+	fixTrails();
+	clearTrails();
+	mainIdle();
+	gameIdle();
+	defaultDisplay();
+	cycleDisplay();
+	allAI();
+	resetScores();
+	movePlayers();
+	timediff();
+	chaseCamMove();
+	camMove();
+	screenSaverCheck();
+
+- Added argument to drawTraces() so that pfTron knows which player (0,1,2,3)
+  to draw traces for.
+
+- Created getElapsedTime() to replace frequent calls to 
+  glutGet(GLUT_ELAPSED_TIME); which are specific to glut.
+
+- Changed name of Display structure to gDisplay.  Conflicts with Display 
+  structure in Xlib.h
+
+- Changed movePlayers() to call setGameIdleFunc() where it used to call 
+  glutIdleFunc().  Needed to move that glut call elsewhere.
+
+- Changed it so that scores are not updated if in screensaver mode.
+  Didn't seem to make sense.  If you disagree, lemme know.
+
+- Changed it so that the sound file is searched for in $GLTRON_SNDDIR then ./
+  then /usr/share/games/gltron.
+
+- Decided to get consistant with the naming.  All instances of gltron are now
+  gltron.
+
+- Added gltron.rpm.spec and gltron_sound.rpm.spec.
+
+- New Makefile.  New rules: install, packages.  Must be root for both.
+  The packages rule makes .rpms, .tgz, and .deb files.
+
+to 0.46:
+- fixed bug with -k option, no more crashes
+- capped FPS at 90-100 FPS (you need more???)
+- fixed crazy FPS counter under windows - now shows the real numbers
+- fixed alternate camera mode under windows
+- did a new windows version (with sound!)
+- included glut.dll in the win32 distribution
+- changed texture format, it's now char[] instead of char*, that should
+remove problems with non-gcc compilers
+- fullscreen rendering under win32 (switched to glutGameMode where avaiable)
+- added '-i' switch, forces in-a-window-rendering under win32
+- added '-v' switch, demo/screensafer mode (don't use with -f!)
+to 0.45:
+- added sound (Song by Peter Hajba)
+- added load/save for preferences
+- split code over several files
+
+to 0.44: 
+- added help screen
+
+to 0.43:
+- fixed bug with uninitialised variable 'loop' in mainIdle() that
+  caused the game to crash sometimes
+- added #ifdefs for FreeBSD (patch from Andrey Zahkhatov)
+ 
+to 0.42:
+
+- added glow around players (patch from Xavier Bouchoux)
+- added second camera (patch from Mike Field)
+- added nice color fade to model color where actually the bikes should be
+  (I hope I'll receive the models soon)
+- added optional erasing of crashed players (like in the movie)
+- added optional fast finishing of the game after human crashes (no more
+  long wait for next round if the computers decide to go in circles around
+  the block)
+- added message who actually won the round (if you can't find it, it's
+  at the bottom of the screen)
+- added CREDITS file
+- added keys for steering player 3 & 4 (you're silly if you think you
+  can get 4 people to use one keyboard)
+- fixed a few minor bugs (e.g. speed change is now persistent)
+- changed behaviour of Display->onScreen
+- added keys for cycling players in upper/lower window in split-screen mode
+- changed FOV to 105
+- added keys to change FOV
+- introduced a bug that makes the game freeze (very very rare), perhaps
+  someone finds out why?
+
+to 0.41:
+
+- changed floor & wall textures (I'm still no artist though) 
+- changed trail colors to fit new floor texture
+- multiple perspectives, view 1, 2 or 4 players (F1-F3 changes
+  that on the fly) - it's worth the download!
+- fixed typos with -h switch
+- fixed Makefile, compiles now with -O2 instead of -g (debug)
+  I can't see an obvious speed increase though
+- added this CHANGELOG file

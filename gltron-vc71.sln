@@ -1,0 +1,70 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gltron", "gltron-vc71.vcproj", "{995222E4-590D-45C2-B998-D94BFF6AA391}"
+	ProjectSection(ProjectDependencies) = postProject
+		{38D75F90-55A2-4BA3-AB68-9A42194EC420} = {38D75F90-55A2-4BA3-AB68-9A42194EC420}
+		{77B12E9E-0359-46ED-92F1-00740DF8545F} = {77B12E9E-0359-46ED-92F1-00740DF8545F}
+		{0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F} = {0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nebu", "nebu\nebu-vc71.vcproj", "{77B12E9E-0359-46ED-92F1-00740DF8545F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{38D75F90-55A2-4BA3-AB68-9A42194EC420} = {38D75F90-55A2-4BA3-AB68-9A42194EC420}
+		{0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F} = {0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nebutest", "nebutest\nebutest-vc71.vcproj", "{70BE3487-7FC7-4C0A-967D-40E9972E8E82}"
+	ProjectSection(ProjectDependencies) = postProject
+		{38D75F90-55A2-4BA3-AB68-9A42194EC420} = {38D75F90-55A2-4BA3-AB68-9A42194EC420}
+		{77B12E9E-0359-46ED-92F1-00740DF8545F} = {77B12E9E-0359-46ED-92F1-00740DF8545F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua5", "lua5\lua5-vc71.vcproj", "{38D75F90-55A2-4BA3-AB68-9A42194EC420}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "artpack-conversion", "tools\artpack-conversion\artpack-conversion-vc71.vcproj", "{66B22897-69D6-47A4-A450-F8DF409572B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77B12E9E-0359-46ED-92F1-00740DF8545F} = {77B12E9E-0359-46ED-92F1-00740DF8545F}
+		{0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F} = {0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glew", "glew\glew-vc71.vcproj", "{0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{995222E4-590D-45C2-B998-D94BFF6AA391}.Debug.ActiveCfg = Debug|Win32
+		{995222E4-590D-45C2-B998-D94BFF6AA391}.Debug.Build.0 = Debug|Win32
+		{995222E4-590D-45C2-B998-D94BFF6AA391}.Release.ActiveCfg = Release|Win32
+		{995222E4-590D-45C2-B998-D94BFF6AA391}.Release.Build.0 = Release|Win32
+		{77B12E9E-0359-46ED-92F1-00740DF8545F}.Debug.ActiveCfg = Debug|Win32
+		{77B12E9E-0359-46ED-92F1-00740DF8545F}.Debug.Build.0 = Debug|Win32
+		{77B12E9E-0359-46ED-92F1-00740DF8545F}.Release.ActiveCfg = Release|Win32
+		{77B12E9E-0359-46ED-92F1-00740DF8545F}.Release.Build.0 = Release|Win32
+		{70BE3487-7FC7-4C0A-967D-40E9972E8E82}.Debug.ActiveCfg = Debug|Win32
+		{70BE3487-7FC7-4C0A-967D-40E9972E8E82}.Debug.Build.0 = Debug|Win32
+		{70BE3487-7FC7-4C0A-967D-40E9972E8E82}.Release.ActiveCfg = Release|Win32
+		{70BE3487-7FC7-4C0A-967D-40E9972E8E82}.Release.Build.0 = Release|Win32
+		{38D75F90-55A2-4BA3-AB68-9A42194EC420}.Debug.ActiveCfg = Debug|Win32
+		{38D75F90-55A2-4BA3-AB68-9A42194EC420}.Debug.Build.0 = Debug|Win32
+		{38D75F90-55A2-4BA3-AB68-9A42194EC420}.Release.ActiveCfg = Release|Win32
+		{38D75F90-55A2-4BA3-AB68-9A42194EC420}.Release.Build.0 = Release|Win32
+		{66B22897-69D6-47A4-A450-F8DF409572B3}.Debug.ActiveCfg = Debug|Win32
+		{66B22897-69D6-47A4-A450-F8DF409572B3}.Debug.Build.0 = Debug|Win32
+		{66B22897-69D6-47A4-A450-F8DF409572B3}.Release.ActiveCfg = Release|Win32
+		{66B22897-69D6-47A4-A450-F8DF409572B3}.Release.Build.0 = Release|Win32
+		{0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F}.Debug.ActiveCfg = Debug|Win32
+		{0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F}.Debug.Build.0 = Debug|Win32
+		{0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F}.Release.ActiveCfg = Release|Win32
+		{0AF4AEB7-447F-418F-B6A1-E05F8DCC8D0F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

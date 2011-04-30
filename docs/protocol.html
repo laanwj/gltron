@@ -1,0 +1,110 @@
+<html>
+<body>
+<h1>glTron Networking Protocol</h1>
+This is the documentation of the gltron networking protocol.
+<p>
+
+<h2>Session Management</h2>
+A typical session looks like this:
+<ol>
+<li>Client connects to server
+<li>Server acknowledges client and puts client into <em>wait</em> state
+<li>Server sends client all information about the game rules and the
+    connected players
+<li>Server puts client into <em>observer</em> state. Client receives
+    a snapshot of the game's data (i.e. the game history) and
+    all further events related to that game.
+<li>A game has ended. Server puts all clients into <em>wait</em> state.
+<li>Server prepares new game. All participating clients go into
+    <em>pre-game</em> state. All the others stay in <em>wait</em> state.
+<li>Server starts new game. All participating clients go in to
+    <em>game</em> state. All other clients go into <em>observer</em> state.
+</ol>
+<h2>Client States</h2>
+<ul>
+<li><strong>wait</strong><br>
+    The client sits and waits for the server to do something. If information
+    is available, the client displays the last game's result and possibly,
+    scenes from the action (can you say 'REPLAY'? :-)
+<li><strong>observer</strong><br>
+    The client displays the game's progress.
+<li><strong>pre-game</strong><br>
+    The client sits and waits for the server to do something.
+<li><strong>game</strong><br>
+    The client displays the game's progress and sends user input to
+    the server.
+</ul>
+
+<h2>Server States</h2>
+<ul>
+<li><strong>pre-game</strong><br>
+    The server has locked the game#s datastructure. No new players can join 
+    this game. The server goes through a countdown sequence before starting the
+    game.
+<li><strong>game</strong><br>
+    The action takes place here.
+<li><strong>wait</strong><br>
+    The game has ended or the server has just started, waiting for new
+    players to join. When sufficient players are available, wait a specific
+    amount of time and go into <em>pre-game</em> state.
+</ul>
+    
+<h2>Messages: Server to Client</h2>
+<ul>
+<li>Session Events
+  <ul>
+  <li>Game starts
+  <li>Game ends
+  <li>New State assigned
+  <li>State information
+  </ul>
+<li>Game Events
+  <ul>
+  <li>A Player Turns left
+  <li>A Player Turns right
+  <li>A Player crashes
+  </ul>
+<li>Networking events
+  <ul>
+  <li>A Player connects
+  <li>A Player disconnects
+  </ul>
+<li>Misc Events
+  <ul>
+  <li>Chat messages
+  </ul>
+</ul>
+
+<h2>Messages: Client to Server</h2>
+<ul>
+<li>Session Events
+  <ul>
+  <li>Client wants to join game
+  <li>Client wants to observer game
+  </ul>
+<li>Game Events
+  <ul>
+  <li>Player wants to turn left
+  <li>Player wants to turn right
+  </ul>
+<li>Misc Events
+  <ul>
+  <li>Chat messages
+{  </ul>
+</ul>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

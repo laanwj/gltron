@@ -1,0 +1,13 @@
+# 
+# Wavefront material file
+# Converted by 3D Exploration 1.833
+# XDimension Software, LLC
+# http://www.xdsoft.com/explorer/
+# 
+# Gives the floor a bluish touch
+newmtl simple
+	 Ka 0 0 0
+	 Kd 0 0 .7
+	 Ks 0.0 0.0 0.0
+	 illum 2
+	 Ns 8

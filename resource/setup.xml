@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<install product="GLtron" desc="GLtron" version="0.70" uninstall="uninstall.sh"
+         promptbinaries="yes" update_url="http://www.gltron.org/updates/">
+  <readme>
+    README
+  </readme>
+  <eula>
+   LICENSE
+  </eula>
+  <option install="true" required="true">
+    Install everything
+    <help>Required for play</help>
+    <binary arch="any" libc="any" symlink="gltron" icon="icon.xpm" play="yes">
+      gltron
+    </binary>
+    <files>
+      art/*
+      data/*
+      scripts/*
+      music/*
+    </files>
+  </option>
+</install>

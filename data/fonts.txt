@@ -1,0 +1,2 @@
+menu: babbage.ftx
+game: xenotron.ftx

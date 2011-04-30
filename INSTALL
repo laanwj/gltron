@@ -1,0 +1,47 @@
+GLtron - Installation from source
+
+If you install from CVS, read also README.CVS
+
+Requirements:
+
+Get a working OpenGL / Mesa installation
+Get libpng / zlib (standard on almost any system)
+Get SDL-1.2 (1.1 might work, but is unsupported)
+
+If you want sound, you need to grab SDL_sound 0.1.4 or later from
+http://icculus.org/SDL_sound/
+
+Required libraries for SDL_sound: libmikmod 3.1.5 or newer
+
+Compiling:
+
+./configure
+make
+
+And (probably as root)
+make install
+
+Data files get installed by default to /usr/local/share/gltron
+The config file gets stored in $HOME/.gltronrc and any screenshots you
+make get stored in $HOME/gltron-$version-$index.png
+
+You can tweak most file locations using ./configure options.
+Try ./configure --help
+
+If you want to play from the source directory, use
+./configure --enable-localdata
+
+GLtron will then chdir() to the binary location upon startup, and
+load things from there. This is useful for the loki installer.
+You can put everything (binary & data) into one directory, and but
+a symlink into e.g. /usr/local/bin.
+
+Usage:
+
+'gltron -h' lists a few runtime options. Most notably is the -O option,
+which will speed things up greatly *if you don't have a 3D card*. Don't
+use this unless the game runs really slow, the visuals will suffer terribly.
+
+Start gltron with the -s option if you don't want the sound playing.
+
+Visit http://www.gltron.org/ frequently for updates and patches!

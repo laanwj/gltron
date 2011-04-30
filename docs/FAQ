@@ -1,0 +1,33 @@
+# check http://www.gltron.org/faq.html
+
+Q:
+  Something doesn't work.
+A:
+  The first thing to try is to delete the ~/.gltronrc file.
+  It'll restore sane default settings.
+
+Q:
+  when I try to switch resolutions I get something along the lines of
+
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+  Major opcode of failed request:  142 (XFree86-DRI)
+  Minor opcode of failed request:  9 ()
+  Value in failed request:  0x45
+  Serial number of failed request:  28
+  Current serial number in output stream:  28
+
+and the program exits.
+
+A:
+   It's a bug in X4/DRI. I can't do anything about that.
+   To change the resolution, just edit ~/.gltronrc 
+   Look for 'width' and 'height'.
+
+Q:
+   The lightcycle trails are transparent, I only see a few white lines
+
+A:
+   Some Matrox (G200/G400) and ATI (Rage128) drivers are broken.
+   Make sure you have the latest drivers. If that doesn't help,
+   go to Video->Texturing and turn Trail Decals off.
+

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77B12E9E-0359-46ED-92F1-00740DF8545F}</ProjectGuid>
+    <RootNamespace>nebu</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>./include;../lua5/include;../glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;VERSION="0.71-beta";PATH_SEPARATOR=%27\\%27;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/nebu.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Release\nebu.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./include;../lua5/include;../glew/include;../win32/include;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LIB;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;VERSION="0.71beta1";PATH_SEPARATOR=%27\\%27;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/nebu.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Debug\nebu.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy Debug\nebu.lib nebu.lib</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="video\2d.c" />
+    <ClCompile Include="video\camera.c" />
+    <ClCompile Include="video\console.c" />
+    <ClCompile Include="video\font.c" />
+    <ClCompile Include="video\mesh.c" />
+    <ClCompile Include="video\mesh_3ds.c" />
+    <ClCompile Include="video\mesh_shadow.c" />
+    <ClCompile Include="video\pixels.c" />
+    <ClCompile Include="video\scene.c" />
+    <ClCompile Include="video\texture2d.c" />
+    <ClCompile Include="video\video_system.c" />
+    <ClCompile Include="video\video_utility.c" />
+    <ClCompile Include="base\debug_memory.c" />
+    <ClCompile Include="base\matrix.c" />
+    <ClCompile Include="base\png_texture.c" />
+    <ClCompile Include="base\random.c" />
+    <ClCompile Include="base\resource.c" />
+    <ClCompile Include="base\spline.c" />
+    <ClCompile Include="base\surface.c" />
+    <ClCompile Include="base\system.c" />
+    <ClCompile Include="base\util.c" />
+    <ClCompile Include="base\vector.c" />
+    <ClCompile Include="filesystem\directory-win32.c" />
+    <ClCompile Include="filesystem\file_io.c" />
+    <ClCompile Include="filesystem\filesystem.c" />
+    <ClCompile Include="filesystem\findpath.c" />
+    <ClCompile Include="audio\audio_system.c" />
+    <ClCompile Include="audio\SoundSystem.cpp" />
+    <ClCompile Include="audio\Source.cpp" />
+    <ClCompile Include="audio\Source3D.cpp" />
+    <ClCompile Include="audio\SourceCopy.cpp" />
+    <ClCompile Include="audio\SourceEngine.cpp" />
+    <ClCompile Include="audio\SourceMusic.cpp" />
+    <ClCompile Include="audio\SourceSample.cpp" />
+    <ClCompile Include="input\input_system.c" />
+    <ClCompile Include="input\system_keynames.c" />
+    <ClCompile Include="scripting\scripting.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Nebu.h" />
+    <ClInclude Include="include\Nebu_configuration.h" />
+    <ClInclude Include="include\video\nebu_console.h" />
+    <ClInclude Include="include\Nebu_input.h" />
+    <ClInclude Include="include\base\nebu_argv.h" />
+    <ClInclude Include="include\base\nebu_assert.h" />
+    <ClInclude Include="include\Nebu_base.h" />
+    <ClInclude Include="include\base\nebu_callbacks.h" />
+    <ClInclude Include="include\base\nebu_debug_memory.h" />
+    <ClInclude Include="include\base\nebu_math.h" />
+    <ClInclude Include="include\base\nebu_matrix.h" />
+    <ClInclude Include="include\base\nebu_quat.h" />
+    <ClInclude Include="include\base\nebu_random.h" />
+    <ClInclude Include="include\base\nebu_resource.h" />
+    <ClInclude Include="include\base\nebu_spline.h" />
+    <ClInclude Include="include\base\nebu_surface.h" />
+    <ClInclude Include="include\base\nebu_system.h" />
+    <ClInclude Include="include\base\nebu_types.h" />
+    <ClInclude Include="include\base\nebu_util.h" />
+    <ClInclude Include="include\base\nebu_vector.h" />
+    <ClInclude Include="include\base\nebu_Vector3.h" />
+    <ClInclude Include="include\audio\nebu_audio_system.h" />
+    <ClInclude Include="include\audio\nebu_Sound.h" />
+    <ClInclude Include="include\audio\nebu_SoundSystem.h" />
+    <ClInclude Include="include\audio\nebu_Source.h" />
+    <ClInclude Include="include\audio\nebu_Source3D.h" />
+    <ClInclude Include="include\audio\nebu_SourceCopy.h" />
+    <ClInclude Include="include\audio\nebu_SourceEngine.h" />
+    <ClInclude Include="include\audio\nebu_SourceMusic.h" />
+    <ClInclude Include="include\audio\nebu_SourceSample.h" />
+    <ClInclude Include="include\video\nebu_2d.h" />
+    <ClInclude Include="include\video\nebu_camera.h" />
+    <ClInclude Include="include\video\nebu_font.h" />
+    <ClInclude Include="include\video\nebu_geometry.h" />
+    <ClInclude Include="include\video\nebu_light.h" />
+    <ClInclude Include="include\video\nebu_mesh.h" />
+    <ClInclude Include="include\video\nebu_mesh_3ds.h" />
+    <ClInclude Include="include\video\nebu_png_texture.h" />
+    <ClInclude Include="include\base\nebu_png_texture.h" />
+    <ClInclude Include="include\video\nebu_renderer_gl.h" />
+    <ClInclude Include="include\video\nebu_scene.h" />
+    <ClInclude Include="include\video\nebu_texture2d.h" />
+    <ClInclude Include="include\Nebu_video.h" />
+    <ClInclude Include="include\video\nebu_video_system.h" />
+    <ClInclude Include="include\video\nebu_video_types.h" />
+    <ClInclude Include="include\video\nebu_video_utility.h" />
+    <ClInclude Include="include\filesystem\nebu_file_io.h" />
+    <ClInclude Include="include\filesystem\nebu_filesystem.h" />
+    <ClInclude Include="include\Nebu_filesystem.h" />
+    <ClInclude Include="include\Nebu_scripting.h" />
+    <ClInclude Include="include\scripting\nebu_scripting.h" />
+    <ClInclude Include="include\input\nebu_input_system.h" />
+    <ClInclude Include="include\input\nebu_system_keynames.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\glew\glew.vcxproj">
+      <Project>{0af4aeb7-447f-418f-b6a1-e05f8dcc8d0f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\lua5\lua5.vcxproj">
+      <Project>{38d75f90-55a2-4ba3-ab68-9a42194ec420}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

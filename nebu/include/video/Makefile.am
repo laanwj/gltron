@@ -1,0 +1,1 @@
+noinst_HEADERS = nebu_console.h nebu_extgl.h nebu_light.h nebu_quad.h nebu_renderer_gl.h nebu_video_system.h nebu_video_types.h nebu_mesh.h nebu_mesh_3ds.h nebu_camera.h nebu_gl.h nebu_2d.h nebu_font.h nebu_video_utility.h

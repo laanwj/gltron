@@ -1,0 +1,249 @@
+This file has become out-of-date after the recent reworking.
+It's probably much much worse.
+
+All files are reasonably clean, but poorly documented, unless
+mentioned otherwise.
+
+Sound.h
+SoundSystem.h
+Source.h
+Source3D.h
+SourceCopy.h
+SourceEngine.h
+SourceMusic.h
+SourceSample.h
+
+	C/C++ header files for the Sound engine. No changes planned.
+
+Vector3.h		Ok
+
+	Simple C++ Vector class. Needs const correctness cleanups, and
+	the functions should be inline after the class body, not inside.
+
+artpack.c		Ok, uses global constants
+
+basic_types.h		Ok
+	
+	Defines: List, Point, Line, SystemTime
+
+benchmark.c		Unused, Incomplete
+
+	Functions for probably gfx card speed (e.g. on system startup,
+	for choosing reasonable defaults).
+	
+callbacks.h		Ok
+
+	Defines: Callbacks
+	
+camera.h		Ok, uses global variables
+
+	Defines: CameraType, Camera
+	Enums: Camera Freedom, Types,  Angles
+	
+camera.c		Ok, uses global variables, time hack
+
+	Functions for camera initialization, movement, scripting to change
+	the camera type. Time hack for camera movement (a bit ugly)
+	
+client_data.h		needs fix, 'onScreen' flag is bad
+
+	Defines: Input, Visual 
+	Enums: Viewport Type
+
+	Visual->onScreen member isn't good, write somethings better
+
+computer.c		needs fix, plays crappy and is a bit messy
+
+	defines lots of magic constants
+	needs a new 'freeway' function when the old bitfield goes away
+
+console.h		Ok, incomplete
+console.c		messy, incomplete
+
+	provides some way to dump output, should evolve into a quake-style
+	console	
+	
+credits.c		Ok
+
+data.h			Ok
+
+	Defines: FontTex, Artpack, PLAYER_IS_ACTIVE()
+	Enums: Game modes, Filtering
+
+directory-macos.c	Ok
+directory.c		Ok
+dirsetup-macos.c	Ok
+dirsetup-win32.c	Ok
+dirsetup.c		Ok
+
+engine.c		Very very messy
+engine.h
+event.c
+event.h
+
+explosion.c		drawExplosion shouldn't change the explosion radius
+explosion.h
+
+extgl.c			Unused
+extgl.h
+
+file-macos.c		Move stuff to directory-macos
+file.c			Rather messy, but it works the time being
+file.h
+
+	Enum: File-Location
+
+file_io.c		Ok
+file_io.h
+
+findpath.c		Ok
+
+	Contains GPL'd goto_installpath() 
+
+fonts.c			Ok, but uses lots of globals
+fonttex.c		Ok
+	
+game.c			Very messy
+
+game_data.h	Data structures are messy / inconsistent
+
+	Defines: Grid, RuleSet, Game2, Data, AI, Player, Game
+
+gamegraphics.c		Messy
+
+geom.c			Outdated/Obsolete
+geom.h
+
+globals.c		Far too many globals, probably many unused
+
+gltron.c		Ok
+
+gltron.h		Chaotic
+
+graphics_fx.c		Ok
+graphics_fx.h
+
+graphics_hud.c		Needs a lot of improvement (placement/size/look)
+graphics_hud.h
+
+graphics_lights.c		Ok
+graphics_lights.h
+
+	Enum: LightTypes
+
+graphics_utility.h	Ok
+graphics_utility.c	doPerspecitve, doLookAt, rasonly, drawText
+
+graphics_world.h		Ok
+graphics_world.c		Draws Walls & Floor
+
+gui.c		Ok - perhaps split in graphics / UI handling
+
+input.c		parses commandline args, handles in-game input
+
+light.c
+light.h
+
+load_texture.c
+
+macFuncs.c
+
+material.c
+
+matrix.c
+matrix.h
+
+menu.h
+
+	Defines: mDisplay, Menu, node
+
+menu.c
+
+model.h
+
+	Defines: Material, BoundingBox, Mesh
+	Enums: MeshType, ColorType
+model.c
+
+music_rwop.c
+
+pause.c
+
+pixels.c
+
+png_texture.c
+png_texture.h
+
+quad.c		Obsolete
+quad.h
+
+quadbuf.c	Obsolete
+
+random.c
+random.h
+
+recognizer.c
+recognizer.h
+
+renderer_gl.c
+renderer_gl.h
+
+	Defines: GLState, Renderer
+
+screenshot.c
+
+scripting.c
+scripting.h
+
+scripting_interface.c
+
+settings.c
+settings.h
+
+	Defines: SettingsCache
+
+skybox.c
+skybox.h
+
+sound.c
+
+sound_glue.h
+
+sound_stubs.c
+
+switchCallbacks.c
+switchCallbacks.h
+
+system.c
+system.h
+
+system_keynames.c
+system_keynames.h
+
+texture.c
+texture.h
+
+	Defines: TextureInfo
+	Enum: Texture names
+
+timedemo.c
+timedemo.h
+
+trail.c
+
+trail_geometry.c
+trail_geometry.h
+
+	Defines: TrailMesh
+
+trail_render.c
+
+trails_buffered.c
+
+util.c
+util.h
+
+vector.c
+vector.h
+
+visuals_1d.c

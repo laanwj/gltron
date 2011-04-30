@@ -1,0 +1,45 @@
+GLtron is written by Andreas Umbach and released under the
+GNU General Public License
+
+'Revenge of Cats' is copyright by Peter Hajba <skaven@remedy.fi>
+
+Thanks to
+
+Xavier Bouchoux, Mike Field, Steve Baker, Jean-Bruno Richard,
+Andrey Zahkhatov, Bjonar Henden, Shaul Kedem, Jonas Gustavsson,
+Thomas Flynn, Mattias Engdegard, Ray Kelm, Martin Fierz, Sam Lantinga,
+Joseph Valenzuela, Ryan Gordon, Patrick McCarthy, Mike Zoran
+
+for sending in patches, doing ports, pointing out bugs, giving valuable
+tips, educating me etc.
+
+Thanks to Peter Hajba for the song 'Revenge of Cats'. More stuff on his
+homepage at http://isis.yok.utu.fi/~skaven/music.html
+
+Thanks to Darrell Walisser & Jon Atkins & Todd Kirby & Nicolas Deniaud
+for the additional programming.
+
+Thanks to Charles Babbage for the great lightcycle models and
+the menu background & font.
+
+Thanks to Nicolas Zimmermann & Allen Bond for the wall & floor textures
+and the menu logo & font editing.
+
+Thanks to Ray Kelm for his excellent cross-compiler page and saving
+me from countless hours of struggling with VC++.
+
+Thanks to Damon Law for the sound effects.
+
+Thanks to Tracy Brown and Tyler Esselstrom for the additional art
+(Recognizer & Biohazard art pack).
+
+Thanks to everyone else who commented on the game. It would not have
+been possible without your feedback.
+
+Thanks to 3dfx for sending me a Voodoo5-5500 graphics card.
+Thanks to Right Hemisphere for supplying me with a '3D Exploration' license.
+
+If you think your name should be mentioned here, please tell me. Maybe
+I just forgot about you.
+
+Andreas Umbach <marvin@dataway.ch>

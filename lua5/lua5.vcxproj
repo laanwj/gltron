@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38D75F90-55A2-4BA3-AB68-9A42194EC420}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB; _CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lua5.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lua5.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lapi.c" />
+    <ClCompile Include="lib\lauxlib.c" />
+    <ClCompile Include="lib\lbaselib.c" />
+    <ClCompile Include="lcode.c" />
+    <ClCompile Include="lib\ldblib.c" />
+    <ClCompile Include="ldebug.c" />
+    <ClCompile Include="ldo.c" />
+    <ClCompile Include="ldump.c" />
+    <ClCompile Include="lfunc.c" />
+    <ClCompile Include="lgc.c" />
+    <ClCompile Include="lib\liolib.c" />
+    <ClCompile Include="llex.c" />
+    <ClCompile Include="lib\lmathlib.c" />
+    <ClCompile Include="lmem.c" />
+    <ClCompile Include="lib\loadlib.c" />
+    <ClCompile Include="lobject.c" />
+    <ClCompile Include="lopcodes.c" />
+    <ClCompile Include="lparser.c" />
+    <ClCompile Include="lstate.c" />
+    <ClCompile Include="lstring.c" />
+    <ClCompile Include="lib\lstrlib.c" />
+    <ClCompile Include="ltable.c" />
+    <ClCompile Include="lib\ltablib.c" />
+    <ClCompile Include="ltests.c" />
+    <ClCompile Include="ltm.c" />
+    <ClCompile Include="lundump.c" />
+    <ClCompile Include="lvm.c" />
+    <ClCompile Include="lzio.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\lauxlib.h" />
+    <ClInclude Include="include\lua.h" />
+    <ClInclude Include="include\lualib.h" />
+    <ClInclude Include="lapi.h" />
+    <ClInclude Include="lcode.h" />
+    <ClInclude Include="ldebug.h" />
+    <ClInclude Include="ldo.h" />
+    <ClInclude Include="lfunc.h" />
+    <ClInclude Include="lgc.h" />
+    <ClInclude Include="llex.h" />
+    <ClInclude Include="llimits.h" />
+    <ClInclude Include="lmem.h" />
+    <ClInclude Include="lobject.h" />
+    <ClInclude Include="lopcodes.h" />
+    <ClInclude Include="lparser.h" />
+    <ClInclude Include="lstate.h" />
+    <ClInclude Include="lstring.h" />
+    <ClInclude Include="ltable.h" />
+    <ClInclude Include="ltm.h" />
+    <ClInclude Include="lundump.h" />
+    <ClInclude Include="lvm.h" />
+    <ClInclude Include="lzio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

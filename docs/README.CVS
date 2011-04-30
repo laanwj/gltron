@@ -1,0 +1,5 @@
+After you checked out from CVS (and after every "cvs update -dP"), do
+
+./autogen.sh
+
+See INSTALL for the rest of the build process.

@@ -1,0 +1,21 @@
+mtllib simple-floor.mtl
+usemtl simple
+# Wavefront OBJ (1.0) exported by lynx's OBJ import/export script
+
+# Meshname:	Plane
+# Total number of Faces:	2
+# Total number of Vertices:	4
+
+o Plane
+g Plane
+
+v 1.0 0.999999940395 0.0
+v 1.0 -1.0 0.0
+v -1.00000011921 -0.999999821186 0.0
+v -0.999999642372 1.00000035763 0.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 1.0
+f 1//1 4//4 3//3 
+f 1//1 3//3 2//2 

@@ -1,0 +1,83 @@
+.TH GLTRON 6 2001-06-10
+.SH NAME
+gltron \- a tron-like 3D lightcycle game
+.SH SYNOPSIS
+.B gltron
+.RB [\| \-OfFtwbmxgcCM1234 ]
+.SH DESCRIPTION
+.P
+glTron is a tron-like lightcycle game with a nice 3D perspective
+3D acceleration is recommended.
+.P
+More information can be found at the gltron web site
+http://www.gltron.org/
+.SH PROBLEMS
+.P
+If the game refuses to start up, check your hardware settings and that the necessary libraries are installed.
+.P
+If the options are messed up, remove ~/.gltronrc and try again.
+.P
+Anything else check TODO, known bugs on the website, and lastly ask in #gltron on irc.openprojects.net.
+.SH OPTIONS
+Valid command line options:
+.TP
+.B \-O
+enable software optimizations, useful if your card doesn't have OpenGL acceleration. For best results combine with -t and -1.
+.TP
+.B \-f
+fast finish after human has crashed
+.TP
+.B \-F
+don't display FPS counter
+.TP
+.B \-t
+don't display floor texture, use lines instead (huge speed gain)
+.TP
+.B \-w
+don't display walls (speed gain)
+.TP
+.B \-b
+don't use blending (speed gain)
+.TP
+.B \-m
+don't show lightcycle (speed gain)
+.TP
+.B \-x
+don't show crash texture (speed gain)
+.TP
+.B \-g
+don't show glows (small speed gain)
+.TP
+.B \-c
+don't show ai status
+.TP
+.B \-C
+show ai status (default: on)
+.TP
+.B \-1
+set resolution to 320x240
+.TP
+.B \-2
+set resolution to 640x480 (default)
+.TP
+.B \-3
+set resolution to 800x600
+.TP
+.B \-4
+set resolution to 1024x768
+.TP
+.B \-s
+don't play sound
+.TP
+.B \-h
+help
+.SH AUTHOR
+Updated with 
+.B PROBLEMS
+section by Countersync <countersync@hotmail.com> before submission to upstream source.
+.P
+This manual page was  written  by  Jeronimo  Pellegrini
+<pellegrini@mpcnet.com.br>, based on the information
+in the package by Raphael Bossek,
+for the Debian GNU/Linux system (but may be used by others).
+

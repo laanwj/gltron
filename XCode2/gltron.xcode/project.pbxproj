@@ -1,0 +1,4357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		E1A66CDC082A12AA00997E1B = {
+			children = (
+				E1A66EBB082A164500997E1B,
+				E1A66E4A082A15C300997E1B,
+				E1A66D60082A152200997E1B,
+				E1A66CEA082A133800997E1B,
+			);
+			isa = PBXGroup;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		E1A66CDE082A12AA00997E1B = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = ../nebu/include;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		E1A66CDF082A12AA00997E1B = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		E1A66CE0082A12AA00997E1B = {
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			buildStyles = (
+				E1A66CDE082A12AA00997E1B,
+				E1A66CDF082A12AA00997E1B,
+			);
+			hasScannedForEncodings = 0;
+			isa = PBXProject;
+			mainGroup = E1A66CDC082A12AA00997E1B;
+			productRefGroup = E1A66CEA082A133800997E1B;
+			projectDirPath = "";
+			targets = (
+				E1A66CE8082A133800997E1B,
+				E1A66EB9082A162000997E1B,
+			);
+		};
+		E1A66CE5082A133800997E1B = {
+			buildActionMask = 2147483647;
+			files = (
+				E1A66E84082A15C300997E1B,
+				E1A66E85082A15C300997E1B,
+				E1A66E86082A15C300997E1B,
+				E1A66E88082A15C300997E1B,
+				E1A66E8A082A15C300997E1B,
+				E1A66E8C082A15C300997E1B,
+				E1A66E8E082A15C300997E1B,
+				E1A66E91082A15C300997E1B,
+				E1A66E93082A15C300997E1B,
+				E1A66E9D082A15C300997E1B,
+				E1A66E9E082A15C300997E1B,
+				E1A66EA0082A15C300997E1B,
+				E1A66EA2082A15C300997E1B,
+				E1A66EA4082A15C300997E1B,
+				E1A66EA6082A15C300997E1B,
+				E1A66EA8082A15C300997E1B,
+				E1A66EAA082A15C300997E1B,
+				E1A66EAC082A15C300997E1B,
+				E1A66EAF082A15C300997E1B,
+				E1A66EB1082A15C300997E1B,
+				E1A66EB3082A15C300997E1B,
+				E1A66EB5082A15C300997E1B,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A66CE6082A133800997E1B = {
+			buildActionMask = 2147483647;
+			files = (
+				E1A66E87082A15C300997E1B,
+				E1A66E89082A15C300997E1B,
+				E1A66E8B082A15C300997E1B,
+				E1A66E8D082A15C300997E1B,
+				E1A66E8F082A15C300997E1B,
+				E1A66E90082A15C300997E1B,
+				E1A66E92082A15C300997E1B,
+				E1A66E94082A15C300997E1B,
+				E1A66E95082A15C300997E1B,
+				E1A66E96082A15C300997E1B,
+				E1A66E97082A15C300997E1B,
+				E1A66E98082A15C300997E1B,
+				E1A66E99082A15C300997E1B,
+				E1A66E9A082A15C300997E1B,
+				E1A66E9B082A15C300997E1B,
+				E1A66E9C082A15C300997E1B,
+				E1A66E9F082A15C300997E1B,
+				E1A66EA1082A15C300997E1B,
+				E1A66EA3082A15C300997E1B,
+				E1A66EA5082A15C300997E1B,
+				E1A66EA7082A15C300997E1B,
+				E1A66EA9082A15C300997E1B,
+				E1A66EAB082A15C300997E1B,
+				E1A66EAD082A15C300997E1B,
+				E1A66EAE082A15C300997E1B,
+				E1A66EB0082A15C300997E1B,
+				E1A66EB2082A15C300997E1B,
+				E1A66EB4082A15C300997E1B,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A66CE7082A133800997E1B = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A66CE8082A133800997E1B = {
+			buildPhases = (
+				E1A66CE5082A133800997E1B,
+				E1A66CE6082A133800997E1B,
+				E1A66CE7082A133800997E1B,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Foundation -framework AppKit";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = lua5;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = lua5;
+			productName = lua5;
+			productReference = E1A66CE9082A133800997E1B;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1A66CE9082A133800997E1B = {
+			explicitFileType = archive.ar;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = liblua5.a;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1A66CEA082A133800997E1B = {
+			children = (
+				E1A66CE9082A133800997E1B,
+				E1A66EBA082A162000997E1B,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		E1A66D60082A152200997E1B = {
+			children = (
+				E1A66D61082A152200997E1B,
+				E1A66D6C082A152200997E1B,
+				E1A66D77082A152200997E1B,
+				E1A66D82082A152200997E1B,
+				E1A66DC3082A152200997E1B,
+				E1A66DC7082A152200997E1B,
+				E1A66DC8082A152200997E1B,
+				E1A66DC9082A152200997E1B,
+				E1A66DCA082A152200997E1B,
+				E1A66DCD082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = nebu;
+			path = ../nebu;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D61082A152200997E1B = {
+			children = (
+				E1A66D62082A152200997E1B,
+				E1A66D63082A152200997E1B,
+				E1A66D64082A152200997E1B,
+				E1A66D65082A152200997E1B,
+				E1A66D66082A152200997E1B,
+				E1A66D67082A152200997E1B,
+				E1A66D68082A152200997E1B,
+				E1A66D69082A152200997E1B,
+				E1A66D6A082A152200997E1B,
+				E1A66D6B082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = audio;
+			path = ../nebu/audio;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D62082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = audio_system.c;
+			path = ../nebu/audio/audio_system.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D63082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/audio/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D64082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = music_rwop.c;
+			path = ../nebu/audio/music_rwop.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D65082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SoundSystem.cpp;
+			path = ../nebu/audio/SoundSystem.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D66082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Source.cpp;
+			path = ../nebu/audio/Source.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D67082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Source3D.cpp;
+			path = ../nebu/audio/Source3D.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D68082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SourceCopy.cpp;
+			path = ../nebu/audio/SourceCopy.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D69082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SourceEngine.cpp;
+			path = ../nebu/audio/SourceEngine.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D6A082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SourceMusic.cpp;
+			path = ../nebu/audio/SourceMusic.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D6B082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SourceSample.cpp;
+			path = ../nebu/audio/SourceSample.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D6C082A152200997E1B = {
+			children = (
+				E1A66D6D082A152200997E1B,
+				E1A66D6E082A152200997E1B,
+				E1A66D6F082A152200997E1B,
+				E1A66D70082A152200997E1B,
+				E1A66D71082A152200997E1B,
+				E1A66D72082A152200997E1B,
+				E1A66D73082A152200997E1B,
+				E1A66D74082A152200997E1B,
+				E1A66D75082A152200997E1B,
+				E1A66D76082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = base;
+			path = ../nebu/base;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D6D082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/base/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D6E082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = matrix.c;
+			path = ../nebu/base/matrix.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D6F082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = png_texture.c;
+			path = ../nebu/base/png_texture.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D70082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = quat.c;
+			path = ../nebu/base/quat.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D71082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = random.c;
+			path = ../nebu/base/random.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D72082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = spline.c;
+			path = ../nebu/base/spline.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D73082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = surface.c;
+			path = ../nebu/base/surface.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D74082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = system.c;
+			path = ../nebu/base/system.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D75082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = util.c;
+			path = ../nebu/base/util.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D76082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = vector.c;
+			path = ../nebu/base/vector.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D77082A152200997E1B = {
+			children = (
+				E1A66D78082A152200997E1B,
+				E1A66D7A082A152200997E1B,
+				E1A66D7B082A152200997E1B,
+				E1A66D7C082A152200997E1B,
+				E1A66D7E082A152200997E1B,
+				E1A66D7F082A152200997E1B,
+				E1A66D80082A152200997E1B,
+				E1A66D81082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = filesystem;
+			path = ../nebu/filesystem;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D78082A152200997E1B = {
+			children = (
+				E1A66D79082A152200997E1B,
+			);
+			isa = PBXVariantGroup;
+			name = directory.c;
+			path = ../nebu/filesystem;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D79082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = "Global - macos";
+			path = "directory-macos.c";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		E1A66D7A082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = "directory-win32.c";
+			path = "../nebu/filesystem/directory-win32.c";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D7B082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = directory.c;
+			path = ../nebu/filesystem/directory.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D7C082A152200997E1B = {
+			children = (
+				E1A66D7D082A152200997E1B,
+			);
+			isa = PBXVariantGroup;
+			name = file.c;
+			path = ../nebu/filesystem;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D7D082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = "Global - macos";
+			path = "file-macos.c";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		E1A66D7E082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = file_io.c;
+			path = ../nebu/filesystem/file_io.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D7F082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = filesystem.c;
+			path = ../nebu/filesystem/filesystem.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D80082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = findpath.c;
+			path = ../nebu/filesystem/findpath.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D81082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/filesystem/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D82082A152200997E1B = {
+			children = (
+				E1A66D83082A152200997E1B,
+				E1A66D8E082A152200997E1B,
+				E1A66D9D082A152200997E1B,
+				E1A66DA1082A152200997E1B,
+				E1A66DA5082A152200997E1B,
+				E1A66DA6082A152200997E1B,
+				E1A66DA7082A152200997E1B,
+				E1A66DA8082A152200997E1B,
+				E1A66DA9082A152200997E1B,
+				E1A66DAA082A152200997E1B,
+				E1A66DAB082A152200997E1B,
+				E1A66DAC082A152200997E1B,
+				E1A66DAD082A152200997E1B,
+				E1A66DAE082A152200997E1B,
+				E1A66DB1082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = include;
+			path = ../nebu/include;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D83082A152200997E1B = {
+			children = (
+				E1A66D84082A152200997E1B,
+				E1A66D85082A152200997E1B,
+				E1A66D86082A152200997E1B,
+				E1A66D87082A152200997E1B,
+				E1A66D88082A152200997E1B,
+				E1A66D89082A152200997E1B,
+				E1A66D8A082A152200997E1B,
+				E1A66D8B082A152200997E1B,
+				E1A66D8C082A152200997E1B,
+				E1A66D8D082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = audio;
+			path = ../nebu/include/audio;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D84082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/audio/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D85082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_audio_system.h;
+			path = ../nebu/include/audio/nebu_audio_system.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D86082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_Sound.h;
+			path = ../nebu/include/audio/nebu_Sound.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D87082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SoundSystem.h;
+			path = ../nebu/include/audio/nebu_SoundSystem.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D88082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_Source.h;
+			path = ../nebu/include/audio/nebu_Source.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D89082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_Source3D.h;
+			path = ../nebu/include/audio/nebu_Source3D.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D8A082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SourceCopy.h;
+			path = ../nebu/include/audio/nebu_SourceCopy.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D8B082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SourceEngine.h;
+			path = ../nebu/include/audio/nebu_SourceEngine.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D8C082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SourceMusic.h;
+			path = ../nebu/include/audio/nebu_SourceMusic.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D8D082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SourceSample.h;
+			path = ../nebu/include/audio/nebu_SourceSample.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D8E082A152200997E1B = {
+			children = (
+				E1A66D8F082A152200997E1B,
+				E1A66D90082A152200997E1B,
+				E1A66D91082A152200997E1B,
+				E1A66D92082A152200997E1B,
+				E1A66D93082A152200997E1B,
+				E1A66D94082A152200997E1B,
+				E1A66D95082A152200997E1B,
+				E1A66D96082A152200997E1B,
+				E1A66D97082A152200997E1B,
+				E1A66D98082A152200997E1B,
+				E1A66D99082A152200997E1B,
+				E1A66D9A082A152200997E1B,
+				E1A66D9B082A152200997E1B,
+				E1A66D9C082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = base;
+			path = ../nebu/include/base;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D8F082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/base/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D90082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_callbacks.h;
+			path = ../nebu/include/base/nebu_callbacks.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D91082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_math.h;
+			path = ../nebu/include/base/nebu_math.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D92082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_matrix.h;
+			path = ../nebu/include/base/nebu_matrix.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D93082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_png_texture.h;
+			path = ../nebu/include/base/nebu_png_texture.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D94082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_quat.h;
+			path = ../nebu/include/base/nebu_quat.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D95082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_random.h;
+			path = ../nebu/include/base/nebu_random.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D96082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_spline.h;
+			path = ../nebu/include/base/nebu_spline.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D97082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_surface.h;
+			path = ../nebu/include/base/nebu_surface.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D98082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_system.h;
+			path = ../nebu/include/base/nebu_system.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D99082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_types.h;
+			path = ../nebu/include/base/nebu_types.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D9A082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_util.h;
+			path = ../nebu/include/base/nebu_util.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D9B082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_vector.h;
+			path = ../nebu/include/base/nebu_vector.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D9C082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_Vector3.h;
+			path = ../nebu/include/base/nebu_Vector3.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D9D082A152200997E1B = {
+			children = (
+				E1A66D9E082A152200997E1B,
+				E1A66D9F082A152200997E1B,
+				E1A66DA0082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = filesystem;
+			path = ../nebu/include/filesystem;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D9E082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/filesystem/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66D9F082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_file_io.h;
+			path = ../nebu/include/filesystem/nebu_file_io.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA0082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_filesystem.h;
+			path = ../nebu/include/filesystem/nebu_filesystem.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA1082A152200997E1B = {
+			children = (
+				E1A66DA2082A152200997E1B,
+				E1A66DA3082A152200997E1B,
+				E1A66DA4082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = input;
+			path = ../nebu/include/input;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA2082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/input/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA3082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_input_system.h;
+			path = ../nebu/include/input/nebu_input_system.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA4082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_system_keynames.h;
+			path = ../nebu/include/input/nebu_system_keynames.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA5082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA6082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu.h;
+			path = ../nebu/include/Nebu.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA7082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_audio.h;
+			path = ../nebu/include/Nebu_audio.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA8082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_base.h;
+			path = ../nebu/include/Nebu_base.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DA9082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_configuration.h;
+			path = ../nebu/include/Nebu_configuration.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DAA082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_filesystem.h;
+			path = ../nebu/include/Nebu_filesystem.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DAB082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_input.h;
+			path = ../nebu/include/Nebu_input.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DAC082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_scripting.h;
+			path = ../nebu/include/Nebu_scripting.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DAD082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_video.h;
+			path = ../nebu/include/Nebu_video.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DAE082A152200997E1B = {
+			children = (
+				E1A66DAF082A152200997E1B,
+				E1A66DB0082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = scripting;
+			path = ../nebu/include/scripting;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DAF082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/scripting/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB0082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_scripting.h;
+			path = ../nebu/include/scripting/nebu_scripting.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB1082A152200997E1B = {
+			children = (
+				E1A66DB2082A152200997E1B,
+				E1A66DB3082A152200997E1B,
+				E1A66DB4082A152200997E1B,
+				E1A66DB5082A152200997E1B,
+				E1A66DB6082A152200997E1B,
+				E1A66DB7082A152200997E1B,
+				E1A66DB8082A152200997E1B,
+				E1A66DB9082A152200997E1B,
+				E1A66DBA082A152200997E1B,
+				E1A66DBB082A152200997E1B,
+				E1A66DBC082A152200997E1B,
+				E1A66DBD082A152200997E1B,
+				E1A66DBE082A152200997E1B,
+				E1A66DBF082A152200997E1B,
+				E1A66DC0082A152200997E1B,
+				E1A66DC1082A152200997E1B,
+				E1A66DC2082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = video;
+			path = ../nebu/include/video;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB2082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/video/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB3082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_2d.h;
+			path = ../nebu/include/video/nebu_2d.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB4082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_camera.h;
+			path = ../nebu/include/video/nebu_camera.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB5082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_console.h;
+			path = ../nebu/include/video/nebu_console.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB6082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_extgl.h;
+			path = ../nebu/include/video/nebu_extgl.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB7082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_font.h;
+			path = ../nebu/include/video/nebu_font.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB8082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_gl.h;
+			path = ../nebu/include/video/nebu_gl.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DB9082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_light.h;
+			path = ../nebu/include/video/nebu_light.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DBA082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_mesh.h;
+			path = ../nebu/include/video/nebu_mesh.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DBB082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_mesh_3ds.h;
+			path = ../nebu/include/video/nebu_mesh_3ds.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DBC082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_png_texture.h;
+			path = ../nebu/include/video/nebu_png_texture.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DBD082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_quad.h;
+			path = ../nebu/include/video/nebu_quad.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DBE082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_renderer_gl.h;
+			path = ../nebu/include/video/nebu_renderer_gl.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DBF082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_scene.h;
+			path = ../nebu/include/video/nebu_scene.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC0082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_video_system.h;
+			path = ../nebu/include/video/nebu_video_system.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC1082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_video_types.h;
+			path = ../nebu/include/video/nebu_video_types.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC2082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_video_utility.h;
+			path = ../nebu/include/video/nebu_video_utility.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC3082A152200997E1B = {
+			children = (
+				E1A66DC4082A152200997E1B,
+				E1A66DC5082A152200997E1B,
+				E1A66DC6082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = input;
+			path = ../nebu/input;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC4082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = input_system.c;
+			path = ../nebu/input/input_system.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC5082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/input/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC6082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = system_keynames.c;
+			path = ../nebu/input/system_keynames.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC7082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC8082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = nebu.dsp;
+			path = ../nebu/nebu.dsp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DC9082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = nebu.vcproj;
+			path = ../nebu/nebu.vcproj;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DCA082A152200997E1B = {
+			children = (
+				E1A66DCB082A152200997E1B,
+				E1A66DCC082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = scripting;
+			path = ../nebu/scripting;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DCB082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/scripting/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DCC082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = scripting.c;
+			path = ../nebu/scripting/scripting.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DCD082A152200997E1B = {
+			children = (
+				E1A66DCE082A152200997E1B,
+				E1A66DCF082A152200997E1B,
+				E1A66DD0082A152200997E1B,
+				E1A66DD1082A152200997E1B,
+				E1A66DD2082A152200997E1B,
+				E1A66DD3082A152200997E1B,
+				E1A66DD4082A152200997E1B,
+				E1A66DD5082A152200997E1B,
+				E1A66DD6082A152200997E1B,
+				E1A66DD7082A152200997E1B,
+				E1A66DD8082A152200997E1B,
+				E1A66DD9082A152200997E1B,
+				E1A66DDA082A152200997E1B,
+				E1A66DDB082A152200997E1B,
+				E1A66DDC082A152200997E1B,
+				E1A66DDD082A152200997E1B,
+				E1A66DDE082A152200997E1B,
+				E1A66DDF082A152200997E1B,
+				E1A66DE0082A152200997E1B,
+			);
+			isa = PBXGroup;
+			name = video;
+			path = ../nebu/video;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DCE082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = 2d.c;
+			path = ../nebu/video/2d.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DCF082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = benchmark.c;
+			path = ../nebu/video/benchmark.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD0082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = camera.c;
+			path = ../nebu/video/camera.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD1082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = console.c;
+			path = ../nebu/video/console.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD2082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = extgl.c;
+			path = ../nebu/video/extgl.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD3082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = font.c;
+			path = ../nebu/video/font.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD4082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = light.c;
+			path = ../nebu/video/light.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD5082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/video/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD6082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = mesh.c;
+			path = ../nebu/video/mesh.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD7082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = mesh_3ds.c;
+			path = ../nebu/video/mesh_3ds.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD8082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = mesh_3ds.cpp;
+			path = ../nebu/video/mesh_3ds.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DD9082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = pixels.c;
+			path = ../nebu/video/pixels.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DDA082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = png_texture.c;
+			path = ../nebu/video/png_texture.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DDB082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = quad.c;
+			path = ../nebu/video/quad.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DDC082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = quadbuf.c;
+			path = ../nebu/video/quadbuf.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DDD082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = renderer_gl.c;
+			path = ../nebu/video/renderer_gl.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DDE082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = scene.c;
+			path = ../nebu/video/scene.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DDF082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = video_system.c;
+			path = ../nebu/video/video_system.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66DE0082A152200997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = video_utility.c;
+			path = ../nebu/video/video_utility.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E4A082A15C300997E1B = {
+			children = (
+				E1A66E4B082A15C300997E1B,
+				E1A66E50082A15C300997E1B,
+				E1A66E51082A15C300997E1B,
+				E1A66E52082A15C300997E1B,
+				E1A66E53082A15C300997E1B,
+				E1A66E54082A15C300997E1B,
+				E1A66E55082A15C300997E1B,
+				E1A66E56082A15C300997E1B,
+				E1A66E57082A15C300997E1B,
+				E1A66E58082A15C300997E1B,
+				E1A66E59082A15C300997E1B,
+				E1A66E5A082A15C300997E1B,
+				E1A66E5B082A15C300997E1B,
+				E1A66E5C082A15C300997E1B,
+				E1A66E5D082A15C300997E1B,
+				E1A66E67082A15C300997E1B,
+				E1A66E68082A15C300997E1B,
+				E1A66E69082A15C300997E1B,
+				E1A66E6A082A15C300997E1B,
+				E1A66E6B082A15C300997E1B,
+				E1A66E6C082A15C300997E1B,
+				E1A66E6D082A15C300997E1B,
+				E1A66E6E082A15C300997E1B,
+				E1A66E6F082A15C300997E1B,
+				E1A66E70082A15C300997E1B,
+				E1A66E71082A15C300997E1B,
+				E1A66E72082A15C300997E1B,
+				E1A66E73082A15C300997E1B,
+				E1A66E74082A15C300997E1B,
+				E1A66E75082A15C300997E1B,
+				E1A66E76082A15C300997E1B,
+				E1A66E77082A15C300997E1B,
+				E1A66E78082A15C300997E1B,
+				E1A66E79082A15C300997E1B,
+				E1A66E7A082A15C300997E1B,
+				E1A66E7B082A15C300997E1B,
+				E1A66E7C082A15C300997E1B,
+				E1A66E7D082A15C300997E1B,
+				E1A66E7E082A15C300997E1B,
+				E1A66E7F082A15C300997E1B,
+				E1A66E80082A15C300997E1B,
+				E1A66E81082A15C300997E1B,
+				E1A66E82082A15C300997E1B,
+				E1A66E83082A15C300997E1B,
+			);
+			isa = PBXGroup;
+			name = lua5;
+			path = ../lua5;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E4B082A15C300997E1B = {
+			children = (
+				E1A66E4C082A15C300997E1B,
+				E1A66E4D082A15C300997E1B,
+				E1A66E4E082A15C300997E1B,
+				E1A66E4F082A15C300997E1B,
+			);
+			isa = PBXGroup;
+			name = include;
+			path = ../lua5/include;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E4C082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lauxlib.h;
+			path = ../lua5/include/lauxlib.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E4D082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lua.h;
+			path = ../lua5/include/lua.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E4E082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lualib.h;
+			path = ../lua5/include/lualib.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E4F082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../lua5/include/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E50082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lapi.c;
+			path = ../lua5/lapi.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E51082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lapi.h;
+			path = ../lua5/lapi.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E52082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lcode.c;
+			path = ../lua5/lcode.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E53082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lcode.h;
+			path = ../lua5/lcode.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E54082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ldebug.c;
+			path = ../lua5/ldebug.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E55082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ldebug.h;
+			path = ../lua5/ldebug.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E56082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ldo.c;
+			path = ../lua5/ldo.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E57082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ldo.h;
+			path = ../lua5/ldo.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E58082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ldump.c;
+			path = ../lua5/ldump.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E59082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lfunc.c;
+			path = ../lua5/lfunc.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E5A082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lfunc.h;
+			path = ../lua5/lfunc.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E5B082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lgc.c;
+			path = ../lua5/lgc.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E5C082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lgc.h;
+			path = ../lua5/lgc.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E5D082A15C300997E1B = {
+			children = (
+				E1A66E5E082A15C300997E1B,
+				E1A66E5F082A15C300997E1B,
+				E1A66E60082A15C300997E1B,
+				E1A66E61082A15C300997E1B,
+				E1A66E62082A15C300997E1B,
+				E1A66E63082A15C300997E1B,
+				E1A66E64082A15C300997E1B,
+				E1A66E65082A15C300997E1B,
+				E1A66E66082A15C300997E1B,
+			);
+			isa = PBXGroup;
+			name = lib;
+			path = ../lua5/lib;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E5E082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lauxlib.c;
+			path = ../lua5/lib/lauxlib.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E5F082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lbaselib.c;
+			path = ../lua5/lib/lbaselib.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E60082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ldblib.c;
+			path = ../lua5/lib/ldblib.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E61082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = liolib.c;
+			path = ../lua5/lib/liolib.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E62082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lmathlib.c;
+			path = ../lua5/lib/lmathlib.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E63082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = loadlib.c;
+			path = ../lua5/lib/loadlib.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E64082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lstrlib.c;
+			path = ../lua5/lib/lstrlib.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E65082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ltablib.c;
+			path = ../lua5/lib/ltablib.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E66082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../lua5/lib/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E67082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = llex.c;
+			path = ../lua5/llex.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E68082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = llex.h;
+			path = ../lua5/llex.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E69082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = llimits.h;
+			path = ../lua5/llimits.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E6A082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lmem.c;
+			path = ../lua5/lmem.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E6B082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lmem.h;
+			path = ../lua5/lmem.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E6C082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lobject.c;
+			path = ../lua5/lobject.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E6D082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lobject.h;
+			path = ../lua5/lobject.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E6E082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lopcodes.c;
+			path = ../lua5/lopcodes.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E6F082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lopcodes.h;
+			path = ../lua5/lopcodes.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E70082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lparser.c;
+			path = ../lua5/lparser.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E71082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lparser.h;
+			path = ../lua5/lparser.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E72082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lstate.c;
+			path = ../lua5/lstate.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E73082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lstate.h;
+			path = ../lua5/lstate.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E74082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lstring.c;
+			path = ../lua5/lstring.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E75082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lstring.h;
+			path = ../lua5/lstring.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E76082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ltable.c;
+			path = ../lua5/ltable.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E77082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ltable.h;
+			path = ../lua5/ltable.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E78082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ltests.c;
+			path = ../lua5/ltests.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E79082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ltm.c;
+			path = ../lua5/ltm.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E7A082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ltm.h;
+			path = ../lua5/ltm.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E7B082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = lua5.dsp;
+			path = ../lua5/lua5.dsp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E7C082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = lua5.vcproj;
+			path = ../lua5/lua5.vcproj;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E7D082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lundump.c;
+			path = ../lua5/lundump.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E7E082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lundump.h;
+			path = ../lua5/lundump.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E7F082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lvm.c;
+			path = ../lua5/lvm.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E80082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lvm.h;
+			path = ../lua5/lvm.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E81082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = lzio.c;
+			path = ../lua5/lzio.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E82082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = lzio.h;
+			path = ../lua5/lzio.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E83082A15C300997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../lua5/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66E84082A15C300997E1B = {
+			fileRef = E1A66E4C082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E85082A15C300997E1B = {
+			fileRef = E1A66E4D082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E86082A15C300997E1B = {
+			fileRef = E1A66E4E082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E87082A15C300997E1B = {
+			fileRef = E1A66E50082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E88082A15C300997E1B = {
+			fileRef = E1A66E51082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E89082A15C300997E1B = {
+			fileRef = E1A66E52082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E8A082A15C300997E1B = {
+			fileRef = E1A66E53082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E8B082A15C300997E1B = {
+			fileRef = E1A66E54082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E8C082A15C300997E1B = {
+			fileRef = E1A66E55082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E8D082A15C300997E1B = {
+			fileRef = E1A66E56082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E8E082A15C300997E1B = {
+			fileRef = E1A66E57082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E8F082A15C300997E1B = {
+			fileRef = E1A66E58082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E90082A15C300997E1B = {
+			fileRef = E1A66E59082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E91082A15C300997E1B = {
+			fileRef = E1A66E5A082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E92082A15C300997E1B = {
+			fileRef = E1A66E5B082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E93082A15C300997E1B = {
+			fileRef = E1A66E5C082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E94082A15C300997E1B = {
+			fileRef = E1A66E5E082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E95082A15C300997E1B = {
+			fileRef = E1A66E5F082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E96082A15C300997E1B = {
+			fileRef = E1A66E60082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E97082A15C300997E1B = {
+			fileRef = E1A66E61082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E98082A15C300997E1B = {
+			fileRef = E1A66E62082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E99082A15C300997E1B = {
+			fileRef = E1A66E63082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E9A082A15C300997E1B = {
+			fileRef = E1A66E64082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E9B082A15C300997E1B = {
+			fileRef = E1A66E65082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E9C082A15C300997E1B = {
+			fileRef = E1A66E67082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E9D082A15C300997E1B = {
+			fileRef = E1A66E68082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E9E082A15C300997E1B = {
+			fileRef = E1A66E69082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66E9F082A15C300997E1B = {
+			fileRef = E1A66E6A082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA0082A15C300997E1B = {
+			fileRef = E1A66E6B082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA1082A15C300997E1B = {
+			fileRef = E1A66E6C082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA2082A15C300997E1B = {
+			fileRef = E1A66E6D082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA3082A15C300997E1B = {
+			fileRef = E1A66E6E082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA4082A15C300997E1B = {
+			fileRef = E1A66E6F082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA5082A15C300997E1B = {
+			fileRef = E1A66E70082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA6082A15C300997E1B = {
+			fileRef = E1A66E71082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA7082A15C300997E1B = {
+			fileRef = E1A66E72082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA8082A15C300997E1B = {
+			fileRef = E1A66E73082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EA9082A15C300997E1B = {
+			fileRef = E1A66E74082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EAA082A15C300997E1B = {
+			fileRef = E1A66E75082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EAB082A15C300997E1B = {
+			fileRef = E1A66E76082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EAC082A15C300997E1B = {
+			fileRef = E1A66E77082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EAD082A15C300997E1B = {
+			fileRef = E1A66E78082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EAE082A15C300997E1B = {
+			fileRef = E1A66E79082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EAF082A15C300997E1B = {
+			fileRef = E1A66E7A082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EB0082A15C300997E1B = {
+			fileRef = E1A66E7D082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EB1082A15C300997E1B = {
+			fileRef = E1A66E7E082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EB2082A15C300997E1B = {
+			fileRef = E1A66E7F082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EB3082A15C300997E1B = {
+			fileRef = E1A66E80082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EB4082A15C300997E1B = {
+			fileRef = E1A66E81082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EB5082A15C300997E1B = {
+			fileRef = E1A66E82082A15C300997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66EB6082A162000997E1B = {
+			buildActionMask = 2147483647;
+			files = (
+				E1A66F53082A164600997E1B,
+				E1A66F54082A164600997E1B,
+				E1A66F55082A164600997E1B,
+				E1A66F56082A164600997E1B,
+				E1A66F57082A164600997E1B,
+				E1A66F58082A164600997E1B,
+				E1A66F59082A164600997E1B,
+				E1A66F5A082A164600997E1B,
+				E1A66F5B082A164600997E1B,
+				E1A66F5C082A164600997E1B,
+				E1A66F5D082A164600997E1B,
+				E1A66F5E082A164600997E1B,
+				E1A66F5F082A164600997E1B,
+				E1A66F60082A164600997E1B,
+				E1A66F61082A164600997E1B,
+				E1A66F62082A164600997E1B,
+				E1A66F63082A164600997E1B,
+				E1A66F64082A164600997E1B,
+				E1A66F65082A164600997E1B,
+				E1A66F66082A164600997E1B,
+				E1A66F67082A164600997E1B,
+				E1A66F68082A164600997E1B,
+				E1A66F69082A164600997E1B,
+				E1A66F6A082A164600997E1B,
+				E1A66F6B082A164600997E1B,
+				E1A66F6C082A164600997E1B,
+				E1A66F6D082A164600997E1B,
+				E1A66F6E082A164600997E1B,
+				E1A66F6F082A164600997E1B,
+				E1A66F70082A164600997E1B,
+				E1A66F71082A164600997E1B,
+				E1A66F72082A164600997E1B,
+				E1A66F73082A164600997E1B,
+				E1A66F74082A164600997E1B,
+				E1A66F75082A164600997E1B,
+				E1A66F76082A164600997E1B,
+				E1A66F77082A164600997E1B,
+				E1A66F78082A164600997E1B,
+				E1A66F79082A164600997E1B,
+				E1A66F7A082A164600997E1B,
+				E1A66F7B082A164600997E1B,
+				E1A66F7C082A164600997E1B,
+				E1A66F7D082A164600997E1B,
+				E1A66F7E082A164600997E1B,
+				E1A66F7F082A164600997E1B,
+				E1A66F80082A164600997E1B,
+				E1A66F81082A164600997E1B,
+				E1A66F82082A164600997E1B,
+				E1A66F83082A164600997E1B,
+				E1A66F84082A164600997E1B,
+				E1A66F85082A164600997E1B,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A66EB7082A162000997E1B = {
+			buildActionMask = 2147483647;
+			files = (
+				E1A66F3C082A164600997E1B,
+				E1A66F3D082A164600997E1B,
+				E1A66F3E082A164600997E1B,
+				E1A66F3F082A164600997E1B,
+				E1A66F40082A164600997E1B,
+				E1A66F41082A164600997E1B,
+				E1A66F42082A164600997E1B,
+				E1A66F43082A164600997E1B,
+				E1A66F44082A164600997E1B,
+				E1A66F45082A164600997E1B,
+				E1A66F46082A164600997E1B,
+				E1A66F47082A164600997E1B,
+				E1A66F48082A164600997E1B,
+				E1A66F49082A164600997E1B,
+				E1A66F4A082A164600997E1B,
+				E1A66F4B082A164600997E1B,
+				E1A66F4C082A164600997E1B,
+				E1A66F4D082A164600997E1B,
+				E1A66F4E082A164600997E1B,
+				E1A66F4F082A164600997E1B,
+				E1A66F50082A164600997E1B,
+				E1A66F51082A164600997E1B,
+				E1A66F52082A164600997E1B,
+				E1A66F86082A164600997E1B,
+				E1A66F87082A164600997E1B,
+				E1A66F88082A164600997E1B,
+				E1A66F89082A164600997E1B,
+				E1A66F8A082A164600997E1B,
+				E1A66F8B082A164600997E1B,
+				E1A66F8C082A164600997E1B,
+				E1A66F8D082A164600997E1B,
+				E1A66F8E082A164600997E1B,
+				E1A66F8F082A164600997E1B,
+				E1A66F90082A164600997E1B,
+				E1A66F91082A164600997E1B,
+				E1A66F92082A164600997E1B,
+				E1A66F93082A164600997E1B,
+				E1A66F94082A164600997E1B,
+				E1A66F95082A164600997E1B,
+				E1A66F96082A164600997E1B,
+				E1A66F97082A164600997E1B,
+				E1A66F98082A164600997E1B,
+				E1A66F99082A164600997E1B,
+				E1A66F9A082A164600997E1B,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A66EB8082A162000997E1B = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A66EB9082A162000997E1B = {
+			buildPhases = (
+				E1A66EB6082A162000997E1B,
+				E1A66EB7082A162000997E1B,
+				E1A66EB8082A162000997E1B,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = ../Library/Frameworks/SDL.framework/Headers;
+				INSTALL_PATH = "$(HOME)/lib";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = nebu;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = nebu;
+			productName = nebu;
+			productReference = E1A66EBA082A162000997E1B;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1A66EBA082A162000997E1B = {
+			explicitFileType = archive.ar;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = libnebu.a;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1A66EBB082A164500997E1B = {
+			children = (
+				E1A66EBC082A164500997E1B,
+				E1A66EC7082A164600997E1B,
+				E1A66ED2082A164600997E1B,
+				E1A66EDD082A164600997E1B,
+				E1A66F1E082A164600997E1B,
+				E1A66F22082A164600997E1B,
+				E1A66F23082A164600997E1B,
+				E1A66F24082A164600997E1B,
+				E1A66F25082A164600997E1B,
+				E1A66F28082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = nebu;
+			path = ../nebu;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EBC082A164500997E1B = {
+			children = (
+				E1A66EBD082A164500997E1B,
+				E1A66EBE082A164500997E1B,
+				E1A66EBF082A164500997E1B,
+				E1A66EC0082A164500997E1B,
+				E1A66EC1082A164500997E1B,
+				E1A66EC2082A164500997E1B,
+				E1A66EC3082A164500997E1B,
+				E1A66EC4082A164500997E1B,
+				E1A66EC5082A164500997E1B,
+				E1A66EC6082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = audio;
+			path = ../nebu/audio;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EBD082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = audio_system.c;
+			path = ../nebu/audio/audio_system.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EBE082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/audio/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EBF082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = music_rwop.c;
+			path = ../nebu/audio/music_rwop.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC0082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SoundSystem.cpp;
+			path = ../nebu/audio/SoundSystem.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC1082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Source.cpp;
+			path = ../nebu/audio/Source.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC2082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Source3D.cpp;
+			path = ../nebu/audio/Source3D.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC3082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SourceCopy.cpp;
+			path = ../nebu/audio/SourceCopy.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC4082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SourceEngine.cpp;
+			path = ../nebu/audio/SourceEngine.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC5082A164500997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SourceMusic.cpp;
+			path = ../nebu/audio/SourceMusic.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC6082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = SourceSample.cpp;
+			path = ../nebu/audio/SourceSample.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC7082A164600997E1B = {
+			children = (
+				E1A66EC8082A164600997E1B,
+				E1A66EC9082A164600997E1B,
+				E1A66ECA082A164600997E1B,
+				E1A66ECB082A164600997E1B,
+				E1A66ECC082A164600997E1B,
+				E1A66ECD082A164600997E1B,
+				E1A66ECE082A164600997E1B,
+				E1A66ECF082A164600997E1B,
+				E1A66ED0082A164600997E1B,
+				E1A66ED1082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = base;
+			path = ../nebu/base;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC8082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/base/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EC9082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = matrix.c;
+			path = ../nebu/base/matrix.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ECA082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = png_texture.c;
+			path = ../nebu/base/png_texture.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ECB082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = quat.c;
+			path = ../nebu/base/quat.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ECC082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = random.c;
+			path = ../nebu/base/random.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ECD082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = spline.c;
+			path = ../nebu/base/spline.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ECE082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = surface.c;
+			path = ../nebu/base/surface.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ECF082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = system.c;
+			path = ../nebu/base/system.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ED0082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = util.c;
+			path = ../nebu/base/util.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ED1082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = vector.c;
+			path = ../nebu/base/vector.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ED2082A164600997E1B = {
+			children = (
+				E1A66ED3082A164600997E1B,
+				E1A66ED5082A164600997E1B,
+				E1A66ED6082A164600997E1B,
+				E1A66ED7082A164600997E1B,
+				E1A66ED9082A164600997E1B,
+				E1A66EDA082A164600997E1B,
+				E1A66EDB082A164600997E1B,
+				E1A66EDC082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = filesystem;
+			path = ../nebu/filesystem;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ED3082A164600997E1B = {
+			children = (
+				E1A66ED4082A164600997E1B,
+			);
+			isa = PBXVariantGroup;
+			name = directory.c;
+			path = ../nebu/filesystem;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ED4082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = "Global - macos";
+			path = "directory-macos.c";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		E1A66ED5082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = "directory-win32.c";
+			path = "../nebu/filesystem/directory-win32.c";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ED6082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = directory.c;
+			path = ../nebu/filesystem/directory.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ED7082A164600997E1B = {
+			children = (
+				E1A66ED8082A164600997E1B,
+			);
+			isa = PBXVariantGroup;
+			name = file.c;
+			path = ../nebu/filesystem;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66ED8082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = "Global - macos";
+			path = "file-macos.c";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		E1A66ED9082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = file_io.c;
+			path = ../nebu/filesystem/file_io.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EDA082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = filesystem.c;
+			path = ../nebu/filesystem/filesystem.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EDB082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = findpath.c;
+			path = ../nebu/filesystem/findpath.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EDC082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/filesystem/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EDD082A164600997E1B = {
+			children = (
+				E1A66EDE082A164600997E1B,
+				E1A66EE9082A164600997E1B,
+				E1A66EF8082A164600997E1B,
+				E1A66EFC082A164600997E1B,
+				E1A66F00082A164600997E1B,
+				E1A66F01082A164600997E1B,
+				E1A66F02082A164600997E1B,
+				E1A66F03082A164600997E1B,
+				E1A66F04082A164600997E1B,
+				E1A66F05082A164600997E1B,
+				E1A66F06082A164600997E1B,
+				E1A66F07082A164600997E1B,
+				E1A66F08082A164600997E1B,
+				E1A66F09082A164600997E1B,
+				E1A66F0C082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = include;
+			path = ../nebu/include;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EDE082A164600997E1B = {
+			children = (
+				E1A66EDF082A164600997E1B,
+				E1A66EE0082A164600997E1B,
+				E1A66EE1082A164600997E1B,
+				E1A66EE2082A164600997E1B,
+				E1A66EE3082A164600997E1B,
+				E1A66EE4082A164600997E1B,
+				E1A66EE5082A164600997E1B,
+				E1A66EE6082A164600997E1B,
+				E1A66EE7082A164600997E1B,
+				E1A66EE8082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = audio;
+			path = ../nebu/include/audio;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EDF082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/audio/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE0082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_audio_system.h;
+			path = ../nebu/include/audio/nebu_audio_system.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE1082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_Sound.h;
+			path = ../nebu/include/audio/nebu_Sound.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE2082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SoundSystem.h;
+			path = ../nebu/include/audio/nebu_SoundSystem.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE3082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_Source.h;
+			path = ../nebu/include/audio/nebu_Source.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE4082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_Source3D.h;
+			path = ../nebu/include/audio/nebu_Source3D.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE5082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SourceCopy.h;
+			path = ../nebu/include/audio/nebu_SourceCopy.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE6082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SourceEngine.h;
+			path = ../nebu/include/audio/nebu_SourceEngine.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE7082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SourceMusic.h;
+			path = ../nebu/include/audio/nebu_SourceMusic.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE8082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_SourceSample.h;
+			path = ../nebu/include/audio/nebu_SourceSample.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EE9082A164600997E1B = {
+			children = (
+				E1A66EEA082A164600997E1B,
+				E1A66EEB082A164600997E1B,
+				E1A66EEC082A164600997E1B,
+				E1A66EED082A164600997E1B,
+				E1A66EEE082A164600997E1B,
+				E1A66EEF082A164600997E1B,
+				E1A66EF0082A164600997E1B,
+				E1A66EF1082A164600997E1B,
+				E1A66EF2082A164600997E1B,
+				E1A66EF3082A164600997E1B,
+				E1A66EF4082A164600997E1B,
+				E1A66EF5082A164600997E1B,
+				E1A66EF6082A164600997E1B,
+				E1A66EF7082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = base;
+			path = ../nebu/include/base;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EEA082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/base/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EEB082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_callbacks.h;
+			path = ../nebu/include/base/nebu_callbacks.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EEC082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_math.h;
+			path = ../nebu/include/base/nebu_math.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EED082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_matrix.h;
+			path = ../nebu/include/base/nebu_matrix.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EEE082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_png_texture.h;
+			path = ../nebu/include/base/nebu_png_texture.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EEF082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_quat.h;
+			path = ../nebu/include/base/nebu_quat.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF0082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_random.h;
+			path = ../nebu/include/base/nebu_random.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF1082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_spline.h;
+			path = ../nebu/include/base/nebu_spline.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF2082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_surface.h;
+			path = ../nebu/include/base/nebu_surface.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF3082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_system.h;
+			path = ../nebu/include/base/nebu_system.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF4082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_types.h;
+			path = ../nebu/include/base/nebu_types.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF5082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_util.h;
+			path = ../nebu/include/base/nebu_util.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF6082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_vector.h;
+			path = ../nebu/include/base/nebu_vector.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF7082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_Vector3.h;
+			path = ../nebu/include/base/nebu_Vector3.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF8082A164600997E1B = {
+			children = (
+				E1A66EF9082A164600997E1B,
+				E1A66EFA082A164600997E1B,
+				E1A66EFB082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = filesystem;
+			path = ../nebu/include/filesystem;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EF9082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/filesystem/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EFA082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_file_io.h;
+			path = ../nebu/include/filesystem/nebu_file_io.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EFB082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_filesystem.h;
+			path = ../nebu/include/filesystem/nebu_filesystem.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EFC082A164600997E1B = {
+			children = (
+				E1A66EFD082A164600997E1B,
+				E1A66EFE082A164600997E1B,
+				E1A66EFF082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = input;
+			path = ../nebu/include/input;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EFD082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/input/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EFE082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_input_system.h;
+			path = ../nebu/include/input/nebu_input_system.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66EFF082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_system_keynames.h;
+			path = ../nebu/include/input/nebu_system_keynames.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F00082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F01082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu.h;
+			path = ../nebu/include/Nebu.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F02082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_audio.h;
+			path = ../nebu/include/Nebu_audio.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F03082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_base.h;
+			path = ../nebu/include/Nebu_base.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F04082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_configuration.h;
+			path = ../nebu/include/Nebu_configuration.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F05082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_filesystem.h;
+			path = ../nebu/include/Nebu_filesystem.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F06082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_input.h;
+			path = ../nebu/include/Nebu_input.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F07082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_scripting.h;
+			path = ../nebu/include/Nebu_scripting.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F08082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Nebu_video.h;
+			path = ../nebu/include/Nebu_video.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F09082A164600997E1B = {
+			children = (
+				E1A66F0A082A164600997E1B,
+				E1A66F0B082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = scripting;
+			path = ../nebu/include/scripting;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F0A082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/scripting/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F0B082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_scripting.h;
+			path = ../nebu/include/scripting/nebu_scripting.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F0C082A164600997E1B = {
+			children = (
+				E1A66F0D082A164600997E1B,
+				E1A66F0E082A164600997E1B,
+				E1A66F0F082A164600997E1B,
+				E1A66F10082A164600997E1B,
+				E1A66F11082A164600997E1B,
+				E1A66F12082A164600997E1B,
+				E1A66F13082A164600997E1B,
+				E1A66F14082A164600997E1B,
+				E1A66F15082A164600997E1B,
+				E1A66F16082A164600997E1B,
+				E1A66F17082A164600997E1B,
+				E1A66F18082A164600997E1B,
+				E1A66F19082A164600997E1B,
+				E1A66F1A082A164600997E1B,
+				E1A66F1B082A164600997E1B,
+				E1A66F1C082A164600997E1B,
+				E1A66F1D082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = video;
+			path = ../nebu/include/video;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F0D082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/include/video/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F0E082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_2d.h;
+			path = ../nebu/include/video/nebu_2d.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F0F082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_camera.h;
+			path = ../nebu/include/video/nebu_camera.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F10082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_console.h;
+			path = ../nebu/include/video/nebu_console.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F11082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_extgl.h;
+			path = ../nebu/include/video/nebu_extgl.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F12082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_font.h;
+			path = ../nebu/include/video/nebu_font.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F13082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_gl.h;
+			path = ../nebu/include/video/nebu_gl.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F14082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_light.h;
+			path = ../nebu/include/video/nebu_light.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F15082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_mesh.h;
+			path = ../nebu/include/video/nebu_mesh.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F16082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_mesh_3ds.h;
+			path = ../nebu/include/video/nebu_mesh_3ds.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F17082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_png_texture.h;
+			path = ../nebu/include/video/nebu_png_texture.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F18082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_quad.h;
+			path = ../nebu/include/video/nebu_quad.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F19082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_renderer_gl.h;
+			path = ../nebu/include/video/nebu_renderer_gl.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F1A082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_scene.h;
+			path = ../nebu/include/video/nebu_scene.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F1B082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_video_system.h;
+			path = ../nebu/include/video/nebu_video_system.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F1C082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_video_types.h;
+			path = ../nebu/include/video/nebu_video_types.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F1D082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = nebu_video_utility.h;
+			path = ../nebu/include/video/nebu_video_utility.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F1E082A164600997E1B = {
+			children = (
+				E1A66F1F082A164600997E1B,
+				E1A66F20082A164600997E1B,
+				E1A66F21082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = input;
+			path = ../nebu/input;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F1F082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = input_system.c;
+			path = ../nebu/input/input_system.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F20082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/input/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F21082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = system_keynames.c;
+			path = ../nebu/input/system_keynames.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F22082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F23082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = nebu.dsp;
+			path = ../nebu/nebu.dsp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F24082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			name = nebu.vcproj;
+			path = ../nebu/nebu.vcproj;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F25082A164600997E1B = {
+			children = (
+				E1A66F26082A164600997E1B,
+				E1A66F27082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = scripting;
+			path = ../nebu/scripting;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F26082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/scripting/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F27082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = scripting.c;
+			path = ../nebu/scripting/scripting.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F28082A164600997E1B = {
+			children = (
+				E1A66F29082A164600997E1B,
+				E1A66F2A082A164600997E1B,
+				E1A66F2B082A164600997E1B,
+				E1A66F2C082A164600997E1B,
+				E1A66F2D082A164600997E1B,
+				E1A66F2E082A164600997E1B,
+				E1A66F2F082A164600997E1B,
+				E1A66F30082A164600997E1B,
+				E1A66F31082A164600997E1B,
+				E1A66F32082A164600997E1B,
+				E1A66F33082A164600997E1B,
+				E1A66F34082A164600997E1B,
+				E1A66F35082A164600997E1B,
+				E1A66F36082A164600997E1B,
+				E1A66F37082A164600997E1B,
+				E1A66F38082A164600997E1B,
+				E1A66F39082A164600997E1B,
+				E1A66F3A082A164600997E1B,
+				E1A66F3B082A164600997E1B,
+			);
+			isa = PBXGroup;
+			name = video;
+			path = ../nebu/video;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F29082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = 2d.c;
+			path = ../nebu/video/2d.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F2A082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = benchmark.c;
+			path = ../nebu/video/benchmark.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F2B082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = camera.c;
+			path = ../nebu/video/camera.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F2C082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = console.c;
+			path = ../nebu/video/console.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F2D082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = extgl.c;
+			path = ../nebu/video/extgl.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F2E082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = font.c;
+			path = ../nebu/video/font.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F2F082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = light.c;
+			path = ../nebu/video/light.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F30082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			name = Makefile.am;
+			path = ../nebu/video/Makefile.am;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F31082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = mesh.c;
+			path = ../nebu/video/mesh.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F32082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = mesh_3ds.c;
+			path = ../nebu/video/mesh_3ds.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F33082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = mesh_3ds.cpp;
+			path = ../nebu/video/mesh_3ds.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F34082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = pixels.c;
+			path = ../nebu/video/pixels.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F35082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = png_texture.c;
+			path = ../nebu/video/png_texture.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F36082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = quad.c;
+			path = ../nebu/video/quad.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F37082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = quadbuf.c;
+			path = ../nebu/video/quadbuf.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F38082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = renderer_gl.c;
+			path = ../nebu/video/renderer_gl.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F39082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = scene.c;
+			path = ../nebu/video/scene.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F3A082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = video_system.c;
+			path = ../nebu/video/video_system.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F3B082A164600997E1B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = video_utility.c;
+			path = ../nebu/video/video_utility.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1A66F3C082A164600997E1B = {
+			fileRef = E1A66EBD082A164500997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F3D082A164600997E1B = {
+			fileRef = E1A66EBF082A164500997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F3E082A164600997E1B = {
+			fileRef = E1A66EC0082A164500997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F3F082A164600997E1B = {
+			fileRef = E1A66EC1082A164500997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F40082A164600997E1B = {
+			fileRef = E1A66EC2082A164500997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F41082A164600997E1B = {
+			fileRef = E1A66EC3082A164500997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F42082A164600997E1B = {
+			fileRef = E1A66EC4082A164500997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F43082A164600997E1B = {
+			fileRef = E1A66EC5082A164500997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F44082A164600997E1B = {
+			fileRef = E1A66EC6082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F45082A164600997E1B = {
+			fileRef = E1A66EC9082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F46082A164600997E1B = {
+			fileRef = E1A66ECA082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F47082A164600997E1B = {
+			fileRef = E1A66ECB082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F48082A164600997E1B = {
+			fileRef = E1A66ECC082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F49082A164600997E1B = {
+			fileRef = E1A66ECD082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F4A082A164600997E1B = {
+			fileRef = E1A66ECE082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F4B082A164600997E1B = {
+			fileRef = E1A66ECF082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F4C082A164600997E1B = {
+			fileRef = E1A66ED0082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F4D082A164600997E1B = {
+			fileRef = E1A66ED1082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F4E082A164600997E1B = {
+			fileRef = E1A66ED5082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F4F082A164600997E1B = {
+			fileRef = E1A66ED6082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F50082A164600997E1B = {
+			fileRef = E1A66ED9082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F51082A164600997E1B = {
+			fileRef = E1A66EDA082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F52082A164600997E1B = {
+			fileRef = E1A66EDB082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F53082A164600997E1B = {
+			fileRef = E1A66EE0082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F54082A164600997E1B = {
+			fileRef = E1A66EE1082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F55082A164600997E1B = {
+			fileRef = E1A66EE2082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F56082A164600997E1B = {
+			fileRef = E1A66EE3082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F57082A164600997E1B = {
+			fileRef = E1A66EE4082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F58082A164600997E1B = {
+			fileRef = E1A66EE5082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F59082A164600997E1B = {
+			fileRef = E1A66EE6082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F5A082A164600997E1B = {
+			fileRef = E1A66EE7082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F5B082A164600997E1B = {
+			fileRef = E1A66EE8082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F5C082A164600997E1B = {
+			fileRef = E1A66EEB082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F5D082A164600997E1B = {
+			fileRef = E1A66EEC082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F5E082A164600997E1B = {
+			fileRef = E1A66EED082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F5F082A164600997E1B = {
+			fileRef = E1A66EEE082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F60082A164600997E1B = {
+			fileRef = E1A66EEF082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F61082A164600997E1B = {
+			fileRef = E1A66EF0082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F62082A164600997E1B = {
+			fileRef = E1A66EF1082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F63082A164600997E1B = {
+			fileRef = E1A66EF2082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F64082A164600997E1B = {
+			fileRef = E1A66EF3082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F65082A164600997E1B = {
+			fileRef = E1A66EF4082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F66082A164600997E1B = {
+			fileRef = E1A66EF5082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F67082A164600997E1B = {
+			fileRef = E1A66EF6082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F68082A164600997E1B = {
+			fileRef = E1A66EF7082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F69082A164600997E1B = {
+			fileRef = E1A66EFA082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F6A082A164600997E1B = {
+			fileRef = E1A66EFB082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F6B082A164600997E1B = {
+			fileRef = E1A66EFE082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F6C082A164600997E1B = {
+			fileRef = E1A66EFF082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F6D082A164600997E1B = {
+			fileRef = E1A66F01082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F6E082A164600997E1B = {
+			fileRef = E1A66F02082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F6F082A164600997E1B = {
+			fileRef = E1A66F03082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F70082A164600997E1B = {
+			fileRef = E1A66F04082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F71082A164600997E1B = {
+			fileRef = E1A66F05082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F72082A164600997E1B = {
+			fileRef = E1A66F06082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F73082A164600997E1B = {
+			fileRef = E1A66F07082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F74082A164600997E1B = {
+			fileRef = E1A66F08082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F75082A164600997E1B = {
+			fileRef = E1A66F0B082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F76082A164600997E1B = {
+			fileRef = E1A66F0E082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F77082A164600997E1B = {
+			fileRef = E1A66F0F082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F78082A164600997E1B = {
+			fileRef = E1A66F10082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F79082A164600997E1B = {
+			fileRef = E1A66F11082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F7A082A164600997E1B = {
+			fileRef = E1A66F12082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F7B082A164600997E1B = {
+			fileRef = E1A66F13082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F7C082A164600997E1B = {
+			fileRef = E1A66F14082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F7D082A164600997E1B = {
+			fileRef = E1A66F15082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F7E082A164600997E1B = {
+			fileRef = E1A66F16082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F7F082A164600997E1B = {
+			fileRef = E1A66F17082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F80082A164600997E1B = {
+			fileRef = E1A66F18082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F81082A164600997E1B = {
+			fileRef = E1A66F19082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F82082A164600997E1B = {
+			fileRef = E1A66F1A082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F83082A164600997E1B = {
+			fileRef = E1A66F1B082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F84082A164600997E1B = {
+			fileRef = E1A66F1C082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F85082A164600997E1B = {
+			fileRef = E1A66F1D082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F86082A164600997E1B = {
+			fileRef = E1A66F1F082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F87082A164600997E1B = {
+			fileRef = E1A66F21082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F88082A164600997E1B = {
+			fileRef = E1A66F27082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F89082A164600997E1B = {
+			fileRef = E1A66F29082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F8A082A164600997E1B = {
+			fileRef = E1A66F2A082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F8B082A164600997E1B = {
+			fileRef = E1A66F2B082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F8C082A164600997E1B = {
+			fileRef = E1A66F2C082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F8D082A164600997E1B = {
+			fileRef = E1A66F2D082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F8E082A164600997E1B = {
+			fileRef = E1A66F2E082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F8F082A164600997E1B = {
+			fileRef = E1A66F2F082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F90082A164600997E1B = {
+			fileRef = E1A66F31082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F91082A164600997E1B = {
+			fileRef = E1A66F32082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F92082A164600997E1B = {
+			fileRef = E1A66F33082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F93082A164600997E1B = {
+			fileRef = E1A66F34082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F94082A164600997E1B = {
+			fileRef = E1A66F35082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F95082A164600997E1B = {
+			fileRef = E1A66F36082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F96082A164600997E1B = {
+			fileRef = E1A66F37082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F97082A164600997E1B = {
+			fileRef = E1A66F38082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F98082A164600997E1B = {
+			fileRef = E1A66F39082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F99082A164600997E1B = {
+			fileRef = E1A66F3A082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E1A66F9A082A164600997E1B = {
+			fileRef = E1A66F3B082A164600997E1B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+	};
+	rootObject = E1A66CE0082A12AA00997E1B;
+}

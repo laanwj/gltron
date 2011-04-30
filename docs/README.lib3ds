@@ -1,0 +1,8 @@
+GLTron uses lib3ds-1.2
+
+lib3ds's homepage is at http://lib3ds.sf.net
+
+You may get lib3ds-1.2.tar.gz if you would like to see the original package
+in its entirety.
+
+The GLTron source code only contains the library portion of lib3ds.

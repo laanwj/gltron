@@ -1,0 +1,5 @@
+GLtron has now the ability to playback mp3 files and other music.
+
+Put your music in the music/ directory and prefix the filename with
+'song_', e.g. 'song_aybabtu.mp3'. Use the arrow keys on the Audio->Song
+menu item to cycle through the list (generated at startup).

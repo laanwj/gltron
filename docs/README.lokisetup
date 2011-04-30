@@ -1,0 +1,8 @@
+I'm using a very old loki setup, but it seems to work
+The commandlike to generate it was
+
+sh /home/andreas/src/loki_setup/makeself/makeself.sh Install-Image/ gltron-0.70.sh "GLtron 0.70" ./setup.sh
+
+The LIBS line for compiling the binary:
+
+LIBS = -L/usr/X11R6/lib -L/usr/local/lib -Wl,-rpath,/usr/local/lib,-Bstatic -lSDL_sound -lSDL -lsmpeg -lmikmod -lvorbisfile -lvorbis -logg -lXxf86dga -lXxf86vm -lXv -lXinerama -lXi -lpng -lz -lstdc++ -Wl,-Bdynamic -lpthread -lGL -lX11 -lXext -ldl 

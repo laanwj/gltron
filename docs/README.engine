@@ -1,0 +1,55 @@
+GLtron is slowly turning into a game engine.
+
+Files that contain almost no GLtron specific code:
+
+gltron.c (main initialization)
+macFuncs.c (mac stuff)
+system.c (SDL wrapper, main loop)
+findpath.c, file.c, directory.c (file system abstraction)
+scripting.c (Lua wrapper)
+scripting_interface.c (lua callable c functions)
+console.c (messages, very incomplete)
+artpack.c (texture loading stuff)
+sound.c (sound stuff, loads game specific FX though)
+switchCallbacks.c (callback system for game loop)
+credits.c (show credits (text is game specific))
+fonts.c (loads font textures)
+fonttex.c (font texture handling, text rendering)
+geom.c (math utility functions)
+gui.c (render menu, some game specific rendering)
+load_texture.c (texture loading)
+material.cpp (model loading)
+menu.c (render gui menu)
+model.cpp (model loading)
+pause.c (mostly 'do nothing' mode)
+pixels.c (mipmapping function)
+png_texture.c (png file loading)
+quad.c (poor rendering abstraction)
+quadbuf.c (poor scenegraph imitation)
+renderer_gl.c (poor renderer abstraction)
+software.c (software rendering path, not used anymore)
+texture.c (texture loading function)
+SoundSystem .cpp files
+
+Undetermined
+
+settings.c (defaults, set's some game related variables too, sanity check, setting interface)
+input.c (parses cmd-line options, input during gameplay)
+globals.c (some game data, some engine data)
+light.c (some lighting functions - maybe useful)
+sound_glue.cpp (some basic sound functionality, some game specific audio playback)
+
+lua-files
+
+GLtron specific:
+
+camera.c (camera movement is certainly game specific)
+computer.c (AI for GLtron opponents)
+engine.c (setup game datastructures, deals with a few events, utility functions)
+event.c (handle game events, idleGame function)
+game.c (init game datastructures, game display setup, game mouse motion)
+gamegraphics.c (rendering of the game world - a tiny bit reusable stuff)
+skybox.c (game specific rendering)
+trail.c (game specific rendering)
+trails_buffered.c (game specific rendering)
+

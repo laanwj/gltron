@@ -1,0 +1,87 @@
+Project:
+- compile clean TODO list
+- compile priority list
+- revise release schedule
+
+RANDOM STUFF:
+
+- add support for arbitrary movement directions
+	- rewrite AI for more than 4 directions
+	
+- add support for zones
+  - check for zone transitions
+  - zone dependent variables:
+	- collision sets
+	- speed
+	- movement directions
+	- turbo recharge options
+
+- Try to remember what this is about
+  - Create levels with different scales
+  - Debug auto-camera
+- Spread the script-callable code through the modules
+
+- Change player/AI configuration menu
+
+- Update Wiki:
+	- Describe changes in menu structure
+	- Update bugs 
+	- Describe gltron.ini
+		- performance tweaks
+		- arena outlines
+
+Immediate:
+
+General
+- Convert artpacks on Load
+- Publish artpack conversion tool
+- Document artpack.lua
+- support older artpack revisions (4 walls, non-unified GUI),
+  add artpack version to artpack.lua
+
+- Work around config bug again
+- Reorder menu structure?
+
+Audio
+- Multiple listeners fuer Splitscreen
+
+Mac OS X
+- check cycle colors on OS X
+- check cycle on startup on OS X
+- check crashes on OS X
+- SDL_sound: OS X binaries with ogg / mod / mp3 support
+
+Soon:
+
+Video
+- enable non-pow2 textures on newer hardware
+- enable anisotropic filtering on newer hardware
+
+Code (general)
+- cleanup: replace getPath() stuff with nebu calls
+- cleanup: switch to resource manager
+
+Tools
+- Level editing tools
+- Level & artpack preview
+  - Add 'preview' option to Artpack/Level menu
+  - Design Screen layout for previews
+  - Create temporary texture set
+  - Load/Save game state (what about camera position?)
+  - ??
+- Level & artpack packaging tools (consistency check, uploading, etc)
+- Level & artpack browsing for webpage
+
+Homepage
+- CSS support
+- wiki
+- rss feed for news, include in homepage
+- rss feed for blog, include in homepage
+
+- keep developer/art/support information somewhere
+- plea for help
+
+Audio:
+- own cycle: increase volume upon acceeleration, decrease default sound volume
+  for own cycle
+

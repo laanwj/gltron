@@ -1,0 +1,95 @@
+TODO list
+
+(name) reported it (contact for questions)
+[name] plans to fix it (contact for updates/patches)
+
+Documentation & Packaging:
+- gltron.org: FAQ, Roadmap, Contributor's options
+- innosetup: compile patch installer
+
+Optimizations/Cleanups [high priority]:
+
+Darrell or Andreas:
+
+- portable locking solution for sound idle/mix (callback must not block on os 9)
+
+Bugs [high priority]:
+
+Andreas:
+
+- new trail rendering:
+  redo depth sorting using index buffers
+
+Bugs [medium priority]:
+
+Todd:
+
+- fix gap between the top of the front fender and the wheel on the 
+    lightcycle-high model
+
+Andreas:
+
+- always hide mouse pointer when running fullscreen
+
+Gameplay enhancements:
+
+Andreas:
+
+- fast-finish / insta-fininish
+- scripted bot AI
+- add new starting positions, e.g. 3 against one
+
+Polish [medium priority]:
+
+Todd:
+
+- change spoke speed when boost is applied
+- add extra faces for spokes instead of using existing rim triangles.
+
+Andreas:
+
+- add hole in arena wall
+- remove space around single player view
+- fix camera zoom generally (speed / settings)
+- add screen resolution independent font rendering
+- stenciled shadow volumes
+- load cockpit model
+- make fov a configuration parameter
+- decent 2D overlay handling in scene management
+- seperate game from engine a bit more
+- check various TODOs and FIXMEs in the code
+- fix --disable-sound issues:
+  - fix configure.in
+  - prevent Audio menu from crashing when compiled with --disable-sound
+
+Bugs [low priority]:
+
+Andreas:
+
+- delete the sound object in Audio_Quit to allow restarting the whole
+  sound system without memory leaks
+
+Polish [low priority]:
+
+Andreas:
+
+- glare/lense flare around the bright trail part behind the cycle
+- configurable zoom functionality (e.g. other mouse buttons)
+- better GUI support for mouse / gamepad
+- fix GUI resizing all the time
+- add software mouse cursor
+- add more special effects (reflections etc.)
+- create default graphics settings to choose from: low/medium/high
+- explosion is missing alpha blending right now
+- Proper HUD for scores / ai info, etc.
+- uv-coordinates for the model, add texture coordinate support to obj loader
+- quake-like drop down console
+- add slightly funny console messages (Robot ate Andi's tail)
+- quick way to restore sane camera angle (e.g. middle mouse button)
+- add (merge) software mouse cursor (from networking branch)
+- Rework LOD system a bit.
+- remove obsolete bitmap stuff
+- Scale the mesh on load time, to avoid need for GL_NORMALIZE
+- dynamically load OpenGL (?)
+- maybe rewrite save.lua, so .gltronrc is a bit more readable (and settings are
+  grouped)
