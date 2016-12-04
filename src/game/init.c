@@ -64,7 +64,7 @@ void initSubsystems(int argc, const char *argv[]) {
 
 	initGUIs();
 	initVideo();
-	initAudio();
+	//initAudio();
 	initInput();
 
 	fprintf(stderr, "[status] done loading level...\n");
@@ -180,6 +180,7 @@ void initVideo(void) {
 	loadModels();
 }
 
+#if 0
 void initAudio(void) {
 	nebu_Audio_Init();
 	runScript(PATH_SCRIPTS, "audio.lua");
@@ -187,6 +188,7 @@ void initAudio(void) {
 	Sound_initTracks();
 	Sound_setup();
 }
+#endif
 	
 void initGUIs(void)
 {
