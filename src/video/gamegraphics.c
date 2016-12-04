@@ -625,7 +625,7 @@ void drawCycle(int player, int lod, int drawTurn) {
 		if (gSettingsCache.light_cycles) {
 			glEnable(GL_LIGHTING); // enable OpenGL lighting for lightcycles
 		}
-		gltron_Mesh_DrawExplosion(cycle, p->data.exp_radius);
+		// gltron_Mesh_DrawExplosion(cycle, p->data.exp_radius);
 		glDisable(GL_LIGHTING); // disable ligthing after lightcycles
 		glDisable(GL_BLEND);
 
