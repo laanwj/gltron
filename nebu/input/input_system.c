@@ -5,7 +5,7 @@
 #include "scripting/nebu_scripting.h"
 
 #include "base/nebu_system.h"
-#include "SDL_getenv.h"
+#include "SDL_stdinc.h"
 #include <errno.h>
 
 #include "base/nebu_debug_memory.h"
@@ -27,7 +27,7 @@ void nebu_Input_Init(void) {
 	int i;
 
 	/* keyboard */
-	SDL_EnableKeyRepeat(0, 0); /* turn keyrepeat off */
+	//SDL_EnableKeyRepeat(0, 0); /* turn keyrepeat off */
   
 	/* joystick */
 	if(SDL_Init(SDL_INIT_JOYSTICK) >= 0) {
@@ -72,11 +72,11 @@ void nebu_Input_Init(void) {
 }
 
 void nebu_Input_Grab(void) {
-	SDL_WM_GrabInput(SDL_GRAB_ON);
+	//SDL_WM_GrabInput(SDL_GRAB_ON);
 }
 
 void nebu_Input_Ungrab(void) {
-	SDL_WM_GrabInput(SDL_GRAB_OFF);
+	//SDL_WM_GrabInput(SDL_GRAB_OFF);
 }
 
 void nebu_Input_HidePointer(void) {
@@ -151,7 +151,7 @@ const char* nebu_Input_GetKeyname(int key) {
 }  
 
 void nebu_Intern_HandleInput(SDL_Event *event) {
-	char *keyname;
+	const char *keyname;
 	int key, state;
 	// int skip_axis_event = 0;
 	static int joy_axis_state[2] = { 0, 0 };
