@@ -24,5 +24,6 @@ void nebu_Video_GetDimension(int *x, int *y);
 
 void nebu_Video_WarpPointer(int x, int y);
 void nebu_Video_CheckErrors(const char *where);
+void nebu_Video_SwapBuffers(void);
 
 #endif

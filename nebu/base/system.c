@@ -169,12 +169,14 @@ void nebu_System_PostRedisplay() {
   redisplay = 1;
 }
 
+extern void nebu_Video_SwapBuffers(void); // HACK
+
 void nebu_System_SwapBuffers() {
 	int now = nebu_Time_GetElapsed();
 	fps_dt = now - fps_last;
 	fps_last = now;
 	nebu_Time_SetCurrentFrameTime(now);
-	SDL_GL_SwapBuffers();
+	nebu_Video_SwapBuffers(); // HACK
 }
 
 void nebu_System_SetCallback_Display( void(*display)(void) ) {
