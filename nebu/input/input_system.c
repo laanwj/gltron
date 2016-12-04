@@ -13,6 +13,8 @@
 static float joystick_threshold = 0;
 static int mouse_x = -1;
 static int mouse_y = -1;
+static int mouse_rel_x = 0;
+static int mouse_rel_y = 0;
 
 enum { eMaxKeyState = 1024 };
 static int keyState[eMaxKeyState];
@@ -103,28 +105,14 @@ int nebu_Input_GetKeyState(int key)
 
 void nebu_Input_Mouse_GetDelta(int *x, int *y)
 {
-	int wx, wy;
-
-	if(mouse_x == -1 || mouse_y == -1)
-	{
-		// mouse coordinates not yet initialized
-		*x = 0;
-		*y = 0;
-	}
-	
-	nebu_Video_GetDimension(&wx, &wy);
-	*x = mouse_x - wx / 2;
-	*y = mouse_y - wy / 2;
-
-	// printf("[input] returned delta %d,%d\n", *x, *y);
+	*x = mouse_rel_x;
+	*y = mouse_rel_y;
 }
 
 void nebu_Input_Mouse_WarpToOrigin(void)
 {
-	int wx, wy;
-	nebu_Video_GetDimension(&wx, &wy);
-	nebu_Video_WarpPointer(wx / 2, wy / 2);
-	// printf("[input] warped to %d,%d\n", wx / 2, wy /2);
+	mouse_rel_x = 0;
+	mouse_rel_y = 0;
 }
 
 void SystemMouseMotion(int x, int y) {
@@ -261,6 +249,8 @@ void nebu_Intern_HandleInput(SDL_Event *event) {
 		break;
 	case SDL_MOUSEMOTION:
 		SystemMouseMotion(event->motion.x, event->motion.y);
+		mouse_rel_x += event->motion.xrel;
+		mouse_rel_y += event->motion.yrel;
 		break;
 	}
 }
